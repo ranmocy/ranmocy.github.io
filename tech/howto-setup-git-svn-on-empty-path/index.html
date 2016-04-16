@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><head><title>Howto Setup Git-svn on Empty Path</title><meta charset="utf-8" http-equiv="Content-Type" /><meta content="Ranmocy" name="author" /><meta content="Jan 28 2014" name="description" /><link href="https://plus.google.com/+WanzhangSheng" rel="author" /><link href="https://plus.google.com/+WanzhangSheng" rel="publisher" /><link href="atom.xml" rel="alternate" title="Howto Setup Git-svn on Empty Path" type="application/atom+xml" /><meta content="blog" property="og:type" /><meta content="Howto Setup Git-svn on Empty Path" property="og:title" /><meta content="My university use SVN to submit projects.But I use Git as the primary VCS and sync with Github.So..." property="og:description" /><meta content="http://ranmocy.info/favicon.ico" property="og:image" /><meta content="summary" name="twitter:card" /><meta content="@ranmocy" name="twitter:site" /><meta content="Howto Setup Git-svn on Empty Path" name="twitter:title" /><meta content="My university use SVN to submit projects.But I use Git as the primary VCS and sync with Github.So..." name="twitter:description" /><meta content="http://ranmocy.info/favicon.ico" name="twitter:image" /><meta content="@ranmocy" name="twitter:creator" /><meta content="http://ranmocy.info" name="twitter:domain" /><link href="/icons/favicon.ico" rel="icon" type="image/x-icon" /><link href="/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/icons/Icon-60@2x.png" rel="apple-touch-icon" /><link href="/icons/Icon-60@3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="/icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="/icons/Icon-76@2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="/icons/Icon-Small@2x.png" rel="apple-touch-icon" sizes="58x58" /><meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /><link href='/assets/stylesheets/default.css' media='screen' rel='stylesheet' type='text/css'></head><body class="typo"><nav><span class="title"><a href='/' >Howto Setup Git-svn on Empty Path</a></span><span class="date">Jan 28 2014</span><span class="link"><a href='/categories/' >Categories</a><a href='/memories/' >Memories</a><a href='/about/' >About</a></span></nav><article><p>My university use SVN to submit projects.
+But I use Git as the primary VCS and sync with Github.
+So I turn to Git-svn to submit codes.</p>
+
+<p>The repository has many sub directories named with the class codes.
+They share one SVN log.
+But I'd like to seperate into projects by subdir.
+So first of all, create the subdir for the class.</p>
+
+<pre><code>svn mkdir https:///www.cs.usfca.edu/svn/USERNAME/CLASSCODE -m "CLASSCODE init"
+</code></pre>
+
+<p>Init svn settings by Git-svn, and sync:</p>
+
+<pre><code>git svn init https:///www.cs.usfca.edu/svn/USERNAME/CLASSCODE
+git svn fetch
+</code></pre>
+
+<p>Remote branch <code>git-svn</code> is created.
+Then, use the local repo as usual.</p>
+
+<p>When you want to submit the code to SVN:</p>
+
+<pre><code>git checkout git-svn -b svn
+</code></pre>
+
+<p>I don't want to submit all git history to SVN which will mess up the SVN history.
+So I merge with squash:</p>
+
+<pre><code>git merge master --squash
+git commit -m 'CLASSCODE HW1 update'
+</code></pre>
+
+<p>Finally, push to remote:</p>
+
+<pre><code>git svn dcommit
+</code></pre>
+<div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ranmocyblog'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><a class="dsq-brlink" href="http://disqus.com">comments powered by<span class="logo-disqus">Disqus</span></a></article><footer><div class="piece"><span>我努力将诸多人格中微小的片面拼合。</span><span>我拨开我的大脑，只为博君一笑。</span></div><div class="piece"><span>Designed by: <a href='/about/' rel="author" title="Ranmocy">Ranmocy</a></span><span>Hosted by: <a href='https://github.com/' rel="friend" title="Github" target="_blank">Github</a>/<a href='https://gitcafe.com/' rel="friend" title="GitCafe" target="_blank">GitCafe</a></span></div><div class="piece"><span>&copy;Copyright 1991-2016 Ranmocy.</span><span>All Rights Reserved.</span></div></footer><script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-20961770-4']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script></body></html>

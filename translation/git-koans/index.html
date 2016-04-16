@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><title>Git 公案</title><meta charset="utf-8" http-equiv="Content-Type" /><meta content="Ranmocy" name="author" /><meta content="Sep 29 2013" name="description" /><link href="https://plus.google.com/+WanzhangSheng" rel="author" /><link href="https://plus.google.com/+WanzhangSheng" rel="publisher" /><link href="atom.xml" rel="alternate" title="Git 公案" type="application/atom+xml" /><meta content="blog" property="og:type" /><meta content="Git 公案" property="og:title" /><meta content="&gt; 英文原文：[Steve Losh - Git Koans](http://stevelosh.com/blog/2013/04/git-koans/)&lt;br/&gt;受 Vim Koans 而启发..." property="og:description" /><meta content="http://ranmocy.info/favicon.ico" property="og:image" /><meta content="summary" name="twitter:card" /><meta content="@ranmocy" name="twitter:site" /><meta content="Git 公案" name="twitter:title" /><meta content="&gt; 英文原文：[Steve Losh - Git Koans](http://stevelosh.com/blog/2013/04/git-koans/)&lt;br/&gt;受 Vim Koans 而启发..." name="twitter:description" /><meta content="http://ranmocy.info/favicon.ico" name="twitter:image" /><meta content="@ranmocy" name="twitter:creator" /><meta content="http://ranmocy.info" name="twitter:domain" /><link href="/icons/favicon.ico" rel="icon" type="image/x-icon" /><link href="/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/icons/Icon-60@2x.png" rel="apple-touch-icon" /><link href="/icons/Icon-60@3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="/icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="/icons/Icon-76@2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="/icons/Icon-Small@2x.png" rel="apple-touch-icon" sizes="58x58" /><meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /><link href='/assets/stylesheets/default.css' media='screen' rel='stylesheet' type='text/css'></head><body class="typo"><nav><span class="title"><a href='/' >Git 公案</a></span><span class="date">Sep 29 2013</span><span class="link"><a href='/categories/' >Categories</a><a href='/memories/' >Memories</a><a href='/about/' >About</a></span></nav><article><blockquote><p>英文原文：<a href="http://stevelosh.com/blog/2013/04/git-koans/">Steve Losh - Git Koans</a><br/></p></blockquote>
+
+<p>受 Vim Koans 而启发.</p>
+
+<h2>沉默</h2>
+
+<p>一位 Python 程序员递给 Git 大师她的 <code>~/.gitconfig</code> 文件。
+在那众多行间有着这些代码：</p>
+
+<pre><code>[alias]
+; 明确比模糊要好。
+; 如果你想合并应该自己做。
+pull = pull --ff-only
+</code></pre>
+
+<p>Git 大师点点头。“<code>git pull origin master</code>”，那位程序员说道。</p>
+
+<p>Git 大师将 master 更新到了最新并自动与那位程序员的修改进行了合并。</p>
+
+<p>“但是 Git 大师，我没有在我的配置文件中声明只能快进么？”她哭诉道。</p>
+
+<p>Git 大师看着她，点点头，什么也没说。</p>
+
+<p>“那么你为什么没有提醒我我的配置文件有问题？”她问道。</p>
+
+<p>Git 大师回应到：“它没有问题。”</p>
+
+<p>几个月后，这名程序员因为一个其他的原因而阅读了 <code>git --help config</code>，茅塞顿开。</p>
+
+<h2>把一件事做好</h2>
+
+<p>一名 UNIX 程序员正在一个隔间办公室（cubicle farms）里工作。
+当她看见 Git 大师走过的时候，她跑过去见他。</p>
+
+<p>“见到您是我的荣幸，Git 大师！”她说道。“我正在学习 UNIX 之道来设计程序使得他们把一件事情做好。我想肯定能从您身上学到很多东西。”</p>
+
+<p>“肯定的”，Git 大师回应道。</p>
+
+<p>“我该如何切换到另一个分支？”那个程序员问道。</p>
+
+<p>“用 <code>git checkout</code>。”</p>
+
+<p>“那么我该如何创建一个分支？”</p>
+
+<p>“用 <code>git checkout</code>。”</p>
+
+<p>“那么我该如何在我的工作目录里更新一个单独的文件的内容，而完全不必操作分支？”</p>
+
+<p>“用 <code>git checkout</code>。”</p>
+
+<p>在得到这三个答案之后，那个程序员幡然醒悟。</p>
+
+<h2>只有神灵</h2>
+
+<p>一个伟大的历史学家正在试图拆解几个月前出现的一个复杂的错误合并。 他朝拜了 Git 大师并向他寻求帮助。</p>
+
+<p>“Git 大师”，那个历史学家说道，“历史的本质是什么？”</p>
+
+<p>“历史是永恒不变的。之后改写历史是在用一种混杂的存在在进行篡改。”</p>
+
+<p>历史学家点点头并问道：“是不是这就是为什么不鼓励推送衍合的提交？”</p>
+
+<p>“的确”，Git 大师说道。</p>
+
+<p>“精彩绝伦！”历史学家惊叹道。“我有一个有两个祖先的历史合并记录。我怎样才能找到这两个祖先原本在什么分支上？”</p>
+
+<p>“历史是转瞬即逝的”，Git 大师回应道，“你所寻求的答案只有神灵们才能回答。”</p>
+
+<p>历史学家抱住了他的头，就像是启示砸在了他的脑袋上一样。</p>
+
+<h2>大地精</h2>
+
+<p>一个学徒正在 Git 大师手下学习。
+在课程结束的时候他浏览了他的笔记并说道，“大师，我有几个问题。我可以问问么？”</p>
+
+<p>Git 大师点点头。</p>
+
+<p>“我怎么列出所有的标签？”</p>
+
+<p>“<code>git tag</code>”，Git 大师回应道。</p>
+
+<p>“我怎么列出所有的远程仓库？”</p>
+
+<p>“<code>git remote -v</code>”，Git 大师回应道。</p>
+
+<p>“我怎么列出所有的分支？”</p>
+
+<p>“<code>git branch -a</code>”，Git 大师回应道。</p>
+
+<p>“我怎么查看当前分支？”</p>
+
+<p>“<code>git rev-parse --abbrev-ref HEAD</code>”，Git 大师回应道。</p>
+
+<p>“我怎么删除一个远程仓库？”</p>
+
+<p>“<code>git remote rm</code>”，Git 大师回应道。</p>
+
+<p>“那么我怎么删除一个分支？”</p>
+
+<p>“<code>git branch -d</code>”，Git 大师回应道。</p>
+
+<p>学徒思考了一会，然后问道：“这里有很多都能做的更一致，那样的话在写代码的时候就可以更好记了吧？”</p>
+
+<p>Git 大师打了个响指。一个大地精进来活生生吃掉了学徒。
+在身后世界中，学徒开悟了。</p>
+
+<h2>长与短</h2>
+
+<p>Git 大师和一个学徒走在一座桥上。</p>
+
+<p>学徒想要学习 Git 大师广博的知识，说道：“<code>git branch --help</code>”。</p>
+
+<p>Git 大师坐下来给她讲解 <code>git branch</code> 的七种形式和他们可用的选项。</p>
+
+<p>他们继续走。几分钟后他们遇到了一位经验丰富开发者从对面走来。
+他向 Git 大师鞠了一躬并问道：“<code>git branch -h</code>”。
+Git 大师简洁的告诉了他最常用的分支选项。
+开发者感谢了他并继续他的旅程。</p>
+
+<p>“大师”，学徒说道，“命令的长选项与短选项的本质是什么？我以为他们是等价的，但是当那个开发者用 <code>-h</code> 的时候你的回答是跟我问 <code>--help</code> 的时候是不一样的。”</p>
+
+<p>“视角是很重要的”，大师回答道。</p>
+
+<p>学徒迷惑了。她决定测试一下并说道：“<code>git -h branch</code>”。</p>
+
+<p>Git 大师转过去自己跳下了栏杆，把自己摔死在下面的石头上。</p>
+
+<p>看到这个，学徒顿悟了。</p>
+<div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ranmocyblog'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><a class="dsq-brlink" href="http://disqus.com">comments powered by<span class="logo-disqus">Disqus</span></a></article><footer><div class="piece"><span>我努力将诸多人格中微小的片面拼合。</span><span>我拨开我的大脑，只为博君一笑。</span></div><div class="piece"><span>Designed by: <a href='/about/' rel="author" title="Ranmocy">Ranmocy</a></span><span>Hosted by: <a href='https://github.com/' rel="friend" title="Github" target="_blank">Github</a>/<a href='https://gitcafe.com/' rel="friend" title="GitCafe" target="_blank">GitCafe</a></span></div><div class="piece"><span>&copy;Copyright 1991-2016 Ranmocy.</span><span>All Rights Reserved.</span></div></footer><script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-20961770-4']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script></body></html>

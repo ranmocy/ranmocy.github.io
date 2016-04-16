@@ -1,0 +1,76 @@
+<!DOCTYPE html><html><head><title>JavaScript: 世界上被误解最深的编程语言</title><meta charset="utf-8" http-equiv="Content-Type" /><meta content="Ranmocy" name="author" /><meta content="Apr 06 2014" name="description" /><link href="https://plus.google.com/+WanzhangSheng" rel="author" /><link href="https://plus.google.com/+WanzhangSheng" rel="publisher" /><link href="atom.xml" rel="alternate" title="JavaScript: 世界上被误解最深的编程语言" type="application/atom+xml" /><meta content="blog" property="og:type" /><meta content="JavaScript: 世界上被误解最深的编程语言" property="og:title" /><meta content="&gt; 英文原文：&lt;br/&gt;[Douglas Crockford - JavaScript: The World&#39;s Most Misunderstood Programming Language]..." property="og:description" /><meta content="http://ranmocy.info/favicon.ico" property="og:image" /><meta content="summary" name="twitter:card" /><meta content="@ranmocy" name="twitter:site" /><meta content="JavaScript: 世界上被误解最深的编程语言" name="twitter:title" /><meta content="&gt; 英文原文：&lt;br/&gt;[Douglas Crockford - JavaScript: The World&#39;s Most Misunderstood Programming Language]..." name="twitter:description" /><meta content="http://ranmocy.info/favicon.ico" name="twitter:image" /><meta content="@ranmocy" name="twitter:creator" /><meta content="http://ranmocy.info" name="twitter:domain" /><link href="/icons/favicon.ico" rel="icon" type="image/x-icon" /><link href="/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/icons/Icon-60@2x.png" rel="apple-touch-icon" /><link href="/icons/Icon-60@3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="/icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="/icons/Icon-76@2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="/icons/Icon-Small@2x.png" rel="apple-touch-icon" sizes="58x58" /><meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /><link href='/assets/stylesheets/default.css' media='screen' rel='stylesheet' type='text/css'></head><body class="typo"><nav><span class="title"><a href='/' >JavaScript: 世界上被误解最深的编程语言</a></span><span class="date">Apr 06 2014</span><span class="link"><a href='/categories/' >Categories</a><a href='/memories/' >Memories</a><a href='/about/' >About</a></span></nav><article><blockquote><p>英文原文：<br/>
+<a href="http://www.crockford.com/javascript/javascript.html">Douglas Crockford - JavaScript: The World's Most Misunderstood Programming Language</a><br/>
+原文写于 2001 年</p></blockquote>
+
+<!-- > 本翻译已获得原作者 Douglas Crockford 的许可。 -->
+
+
+<p><a href="http://javascript.crockford.com/">JavaScript</a>，亦即 Mocha，亦即 LiveScript，亦即 JScript，亦即 ECMAScript，是世界上最流行的编程语言之一。实际上，世界上几乎所有的个人电脑都安装了至少一个 JavaScript 解释器并在频繁使用。JavaScript 的流行完全要归功于其作为万维网脚本语言的角色。</p>
+
+<p>尽管它很流行，却很少有人知道 JavaScript 是一个非常棒的，动态的，面向对象的，通用编程语言。这怎么会不为人所知呢？为什么这个语言如此被误解？</p>
+
+<h2>名字</h2>
+
+<p><strong>Java-</strong> 这个前缀使人想到 JavaScript 多少应该和 Java 有点联系，可能是 Java 的超集或是精简集。看起来选择名字的时候就故意制造这种混淆，并从这种混淆发展成了误解。JavaScript 并不是用来解释 Java 的。Java 才解释了 Java。JavaScript 是另外一个语言。</p>
+
+<p>JavaScript 的语法与 Java 之相似甚过于 Java 相对于 C。但是它并非如同 Java 是 C 的超集一般，是 Java 的超集。它在 Java（原名 Oak）最初的应用场景中比 Java 表现的更好<code>（译注：Java 最初是为 Web 设计的。）</code>。</p>
+
+<p>JavaScript 并不是由 Java 的母公司，Sun 微系统公司开发的。JavaScript 是由网景公司开发的。它原本被称为 LiveScript，这个名字还不怎么容易混淆。</p>
+
+<p><strong>-Script</strong> 后缀让人感觉它并不是一个编程语言，脚本语言多少感觉比编程语言要少点什么。但这强调了它的专长。和 C 相比，JavaScript 用性能换取了表达能力和动态性。</p>
+
+<h2>披着 C 的外皮的 Lisp</h2>
+
+<p>JavaScript 的类 C 语法，包括花括号和老式的 <code>for</code> 语句，让它看起来像是一个普通的过程语言。这完全是误解，因为 JavaScript 与其说像 C 或 Java，更像是 <a href="http://www.crockford.com/javascript/little.html">Lisp 或 Scheme</a> 这类函数式语言。它用数组取代列表，用对象取代属性表；函数是一等公民；它有闭包；你不用匹配括号就能得到 lambda 函数。</p>
+
+<h2>角色定位</h2>
+
+<p>JavaScript 被设计用来跑在网景的 Navigator 浏览器里。它在那里的成功致使其发展成为几乎全部网页浏览器的标配。角色定位功不可没。JavaScript 是编程语言里的 <a href="http://www.amazon.com/exec/obidos/ASIN/B000KWZ7JC/wrrrldwideweb">George Reeves</a>。JavaScript 也广泛适用于非网页相关的应用。</p>
+
+<h2>不确定的目标</h2>
+
+<p>JavaScript 的第一个版本相当羸弱。它缺少异常处理，内部函数和继承。而它现在的形式已经成为一个完整的，面向对象的编程语言了。但是很多对于这门语言的看法仍然认为其形式很不成熟。</p>
+
+<p>负责管理该语言的 ECMA 委员会正意图定制扩展标准，用以解决该语言的一个最大的问题：太多的版本造成的分歧。</p>
+
+<h2>设计错误</h2>
+
+<p>没有完美的编程语言。JavaScript 也有它设计上的错误，像是加法和串联都是利用重载<code>+</code>和强制转换来表达，<code>with</code> 语句的错误倾向都是应该避免的。保留字策略过于严格。分号的插入是一个巨大的失误，像是字面正则表达式的标记方法一样。这些失误致使编程错误，使得语言设计的整体性成为问题。幸运的是这些问题可以通过一个良好的<a href="http://www.jslint.com/">分析程序</a>来缓解。</p>
+
+<p>语言设计失误基本上都相当明显。令人意外地是，ECMAScript 委员会似乎对纠正这些问题没什么兴趣。可能他们更有兴趣去制造问题。</p>
+
+<h2>糟糕的实现</h2>
+
+<p>一些早期的 JavaScript 实现充满了 bug。这严重反映在语言上。雪上加霜的时，这些实现被引进充满 bug 的网页浏览器。</p>
+
+<h2>坏的书籍</h2>
+
+<p>几乎所有关于 JavaScript 的书籍都极其槽糕。他们包含着错误，拙劣的样例，提倡着差劲的设计。语言中重要的特性都被一笔带过或是完全抹去。我评估了许多 JavaScript 书籍，<em>我只能推荐这一本：</em><a href="http://www.amazon.com/exec/obidos/ASIN/0596101996/wrrrldwideweb">JavaScript：权威指南（第五版）</a>，作者 David Flanagan。（作者们请注意：如果你写了本好书，请发送给我一份样书来评估。）</p>
+
+<h2>不标准的标准</h2>
+
+<p><a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">官方的语言标准说明</a>是由 <a href="http://www.ecma-international.org/">ECMA</a> 发布的。该标准质量及其差劲。非常难以阅读和理解。这也是那些糟糕的书籍出现的原因之一，因为作者无法利用标准文档来增进他们对语言的理解。ECMA 还有 TC39 委员会实在应该为此感到羞愧。</p>
+
+<h2>业余</h2>
+
+<p>大部分写 JavaScript 的人并不是程序员。他们缺乏写良好程序的训练和准则。JavaScript 有良多的表达能力，但他们却完全不能借此做些有用的东西。这让 JavaScript 背上了适合业余人员使用的名声，并且并不适合成为专业编程语言。这根本不是真的。</p>
+
+<h2>面向对象</h2>
+
+<p>JavaScript 面向对象么？它的对象可以包含数据和对数据进行操作的方法。对象可以包含其他对象。它没有类，但是它有构造器能够完成类能做的事情，包括像是类的变量和方法的容器。它没有面向类的继承，但是它有面向原型的继承。</p>
+
+<p>两个主要的构建对象系统的方法是利用继承（is-a）或是利用聚合（has-a）。JavaScript 这两种方法都有，但是它的动态性让它更适合聚合。</p>
+
+<p>一些关于 JavaScript 并非面向对象的争论说它并不提供隐藏信息。就是说，对象不能拥有私有变量和私有方法：所有的成员都是公开的。</p>
+
+<p>但是事实上 JavaScript 对象是可以拥有私有变量和私有方法的。（<a href="http://www.crockford.com/javascript/private.html">这里说明如何做到</a>）当然，很少有人知道这个，因为 JavaScript 是世界上被误解最深的编程语言。</p>
+
+<p>一些争论说 JavaScript 并非面向对象因为它没有提供继承。但是事实上 JavaScript <a href="http://www.crockford.com/javascript/inheritance.html">不仅提供了类继承，还提供了其他重用代码的模式</a>。</p>
+<div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ranmocyblog'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><a class="dsq-brlink" href="http://disqus.com">comments powered by<span class="logo-disqus">Disqus</span></a></article><footer><div class="piece"><span>我努力将诸多人格中微小的片面拼合。</span><span>我拨开我的大脑，只为博君一笑。</span></div><div class="piece"><span>Designed by: <a href='/about/' rel="author" title="Ranmocy">Ranmocy</a></span><span>Hosted by: <a href='https://github.com/' rel="friend" title="Github" target="_blank">Github</a>/<a href='https://gitcafe.com/' rel="friend" title="GitCafe" target="_blank">GitCafe</a></span></div><div class="piece"><span>&copy;Copyright 1991-2016 Ranmocy.</span><span>All Rights Reserved.</span></div></footer><script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-20961770-4']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script></body></html>

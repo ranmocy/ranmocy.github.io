@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Raleway"), url(/Raleway.woff) format("woff"); }
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html {
+  color: #555;
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility; }
+
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* HTML5 媒体文件跟 img 保持一致 */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea {
+  font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  line-height: 1.8em; }
+
+/* 去除 IE6 input/button 多余的空白 */
+button, input {
+  *width: auto;
+  *overflow: visible;
+  /* 让 input 和 button 一样高 */
+  line-height: 22px; }
+
+/* 去掉各Table  cell 的边距并让其边重合 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* IE bug fixed: th 不继承 text-align*/
+th {
+  text-align: inherit; }
+
+/* 去除默认边框 */
+fieldset, img {
+  border: 0; }
+
+/* 解决 IE6-7 图片缩放锯齿问题 */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe {
+  display: block; }
+
+/* 块/段落引用 */
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 1em;
+  font-size: 80%;
+  color: #888;
+  background: #f9f9f9;
+  border-left: 0.4em solid #ddd; }
+
+blockquote blockquote {
+  padding: 0 0 0 1em;
+  margin-left: 2em; }
+
+/* Firefox 以外，元素没有下划线，需添加 */
+acronym, abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal; }
+
+/* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
+abbr {
+  cursor: help; }
+
+/* 一致的 del 样式 */
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 400; }
+
+/* 去掉列表前的标识, li 会继承，大部分网站通常用列表来很多内容，所以应该当去 */
+ul, ol {
+  list-style: none; }
+
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption, th {
+  text-align: left; }
+
+q:before, q:after {
+  content: ''; }
+
+/* 统一上标和下标 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: text-top\9; }
+
+:root sub, :root sup {
+  vertical-align: baseline;
+  /* for ie9 and other mordern browsers */ }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+  text-decoration: underline; }
+
+/* 默认不显示下划线，保持页面简洁 */
+ins, a {
+  text-decoration: none; }
+
+/* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
+ * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
+ * 关于 <u> 标签：http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-u-element
+ * 被放弃的是 4，之前一直搞错 http://www.w3.org/TR/html401/appendix/changes.html#idx-deprecated
+ * 一篇关于 <u> 标签的很好文章：http://html5doctor.com/u-element/
+ */
+u, .typo-u {
+  text-decoration: underline; }
+
+/* 标记，类似于手写的荧光笔的作用 */
+mark {
+  background: #fffdd1; }
+
+/* 代码片断 */
+pre, code {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+pre {
+  border: 1px solid #ddd;
+  border-left-width: 0.4em;
+  background: #fbfbfb;
+  padding: 10px; }
+
+/* 一致化 horizonal rule */
+hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 10px;
+  *color: pink;
+  *filter: chroma(color=pink);
+  height: 10px;
+  *margin: -7px 0 2px; }
+
+/* 底部印刷体、版本等标记 */
+small, .typo-small,
+figcaption {
+  font-size: 12px;
+  color: #888; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+/* 保证块/段落之间的空白隔行 */
+.typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
+  margin-bottom: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-weight: 800\9;
+  font-family: Helvetica Neue, Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
+  color: #333; }
+
+/* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
+.typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
+.typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
+  margin-bottom: 0.4em;
+  line-height: 1.5; }
+
+.typo h1, .typo-h1 {
+  font-size: 1.8em; }
+
+.typo h2, .typo-h2 {
+  font-size: 1.6em; }
+
+.typo h3, .typo-h3 {
+  font-size: 1.4em; }
+
+.typo h4, .typo-h4 {
+  font-size: 1.2em; }
+
+.typo h5, .typo h6, .typo-h5, .typo-h6 {
+  font-size: 1em; }
+
+/* 在文章中，应该还原 ul 和 ol 的样式 */
+.typo ul, .typo-ul {
+  margin-left: 1.3em;
+  list-style: disc; }
+
+.typo ol, .typo-ol {
+  list-style: decimal;
+  margin-left: 1.9em; }
+
+.typo li ul, .typo li ol, .typo-ul ul, .typo-ul ol, .typo-ol ul, .typo-ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2em; }
+
+.typo li ul, .typo-ul ul, .typo-ol ul {
+  list-style: circle; }
+
+/* 同 ul/ol，在文章中应用 table 基本格式 */
+.typo table th, .typo table td, .typo-table th, .typo-table td .typo table caption {
+  border: 1px solid #ddd;
+  padding: 5px 10px; }
+
+.typo table th, .typo-table th {
+  background: #fbfbfb; }
+
+.typo table thead th, .typo-table thead th {
+  background: #f1f1f1; }
+
+.typo table .caption {
+  border-bottom: none; }
+
+/* 去除 webkit 中 input 和 textarea 的默认样式  */
+.typo-input, .typo-textarea {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+/* 高亮选中 */
+::-moz-selection {
+  background: #5af;
+  color: #fff; }
+
+::selection {
+  background: #5af;
+  color: #fff; }
+
+/* TODO: 供着重号使用 */
+.typo-em, .typo em, legend, caption {
+  font-weight: 700; }
+
+div.gsc-control-cse {
+  background: none;
+  border: none; }
+  div.gsc-control-cse table td {
+    border: none;
+    padding: 0; }
+  div.gsc-control-cse input.gsc-input {
+    background: none !important; }
+  div.gsc-control-cse input.gsc-search-button {
+    border: 0;
+    height: 100%; }
+  div.gsc-control-cse div.gcsc-branding {
+    display: none; }
+  div.gsc-control-cse a.gs-title {
+    color: #dc322f !important; }
+    div.gsc-control-cse a.gs-title:hover, div.gsc-control-cse a.gs-title.active {
+      color: black;
+      text-decoration: none; }
+
+a {
+  color: #dc322f; }
+  a:hover, a.active {
+    color: black;
+    text-decoration: none; }
+
+.arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  line-height: 7px;
+  border-top: 3px solid #aaa;
+  border-right: 3px solid #aaa;
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.arrow-down {
+  -ms-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg); }
+
+.arrow-left {
+  -ms-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg); }
+
+.arrow-up {
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.lists {
+  font-size: 90%;
+  width: 90%;
+  color: #4d4d4d;
+  margin: 2em auto;
+  text-align: center; }
+  .lists .title {
+    display: inline-block;
+    font: 1.6em 'Raleway','sans-serif';
+    margin: 0 auto;
+    padding: 0 1em;
+    background-color: #FEFEFE; }
+  .lists .cross-line {
+    width: 50%;
+    margin: -1em auto 0 auto;
+    border-top: #7f7f7f solid 1px; }
+  .lists .small-line {
+    width: 30%; }
+  .lists .item {
+    text-align: center;
+    margin-bottom: 1em; }
+    .lists .item a {
+      font: normal 23px/32px serif;
+      color: black; }
+      .lists .item a:hover, .lists .item a.active {
+        color: #dc322f;
+        text-decoration: none; }
+
+html {
+  background-color: #FEFEFE; }
+
+body {
+  margin: 1em auto 10em auto;
+  color: black;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
+  @media screen and (min-width: 1280px) {
+    body {
+      width: 60%; } }
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    body {
+      width: 80%;
+      max-width: 768px; } }
+  @media screen and (max-width: 640px) {
+    body {
+      width: 100%;
+      max-width: 512px; } }
+
+nav {
+  margin: 2em 1em;
+  border: none;
+    border-bottom: 1px solid #999999; }
+
+span.title {
+  font: 1.5em 'Raleway','sans-serif';
+  color: #4d4d4d; }
+
+span.date {
+  margin: 0 0.5em; }
+
+span.link {
+  float: right;
+  font-size: 0.8em; }
+  span.link a {
+    margin-left: 1em; }
+
+header span.title {
+  font-size: 1em; }
+
+footer {
+  color: gray;
+  font-size: 12px;
+  margin: 2em 10%;
+  border-top: double;
+  clear: both; }
+  footer .piece {
+    text-align: center; }
+    footer .piece span {
+      margin: 0 1em;
+      display: inline-block; }
+
+em, strong, a {
+  margin-left: 0.1em;
+  margin-right: 0.1em; }
+
+code {
+  border: 1px #ccc solid;
+  padding: 2px 4px;
+  background: #fafafa;
+  margin: 0 0.2em;
+  font-size: 80%;
+  line-height: inherit;
+  white-space: nowrap; }
+
+pre {
+  overflow-x: auto; }
+  pre code {
+    border: none;
+    word-wrap: normal;
+    white-space: pre;
+    padding: 0;
+    margin: 0; }
+
+article {
+  width: 80%;
+  max-width: 600px;
+  margin: 1em auto; }
+  article img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 3px 3px #ccc; }
+  article .poem {
+    max-width: 300px;
+    margin: 1em auto; }
+
+/*# sourceMappingURL=default.css.map */

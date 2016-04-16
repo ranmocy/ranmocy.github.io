@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><title>按需抽象 Abstraction on Demand</title><meta charset="utf-8" http-equiv="Content-Type" /><meta content="Ranmocy" name="author" /><meta content="Apr 08 2016" name="description" /><link href="https://plus.google.com/+WanzhangSheng" rel="author" /><link href="https://plus.google.com/+WanzhangSheng" rel="publisher" /><link href="atom.xml" rel="alternate" title="按需抽象 Abstraction on Demand" type="application/atom+xml" /><meta content="blog" property="og:type" /><meta content="按需抽象 Abstraction on Demand" property="og:title" /><meta content="前些日子收笔了自己的一个业余项目[Coolol](http://coolol.me)。简单来说这是一个纯 Web 的推特客户端，写作目的是验证自己的几个 idea。他们是：按需抽象；面向组件；定..." property="og:description" /><meta content="http://ranmocy.info/favicon.ico" property="og:image" /><meta content="summary" name="twitter:card" /><meta content="@ranmocy" name="twitter:site" /><meta content="按需抽象 Abstraction on Demand" name="twitter:title" /><meta content="前些日子收笔了自己的一个业余项目[Coolol](http://coolol.me)。简单来说这是一个纯 Web 的推特客户端，写作目的是验证自己的几个 idea。他们是：按需抽象；面向组件；定..." name="twitter:description" /><meta content="http://ranmocy.info/favicon.ico" name="twitter:image" /><meta content="@ranmocy" name="twitter:creator" /><meta content="http://ranmocy.info" name="twitter:domain" /><link href="/icons/favicon.ico" rel="icon" type="image/x-icon" /><link href="/icons/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link href="/icons/Icon-60@2x.png" rel="apple-touch-icon" /><link href="/icons/Icon-60@3x.png" rel="apple-touch-icon" sizes="180x180" /><link href="/icons/Icon-76.png" rel="apple-touch-icon" sizes="76x76" /><link href="/icons/Icon-76@2x.png" rel="apple-touch-icon" sizes="152x152" /><link href="/icons/Icon-Small@2x.png" rel="apple-touch-icon" sizes="58x58" /><meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" /><link href='/assets/stylesheets/default.css' media='screen' rel='stylesheet' type='text/css'></head><body class="typo"><nav><span class="title"><a href='/' >按需抽象 Abstraction on Demand</a></span><span class="date">Apr 08 2016</span><span class="link"><a href='/categories/' >Categories</a><a href='/memories/' >Memories</a><a href='/about/' >About</a></span></nav><article><p>前些日子收笔了自己的一个业余项目<a href="http://coolol.me">Coolol</a>。简单来说这是一个纯 Web 的推特客户端，写作目的是验证自己的几个 idea。他们是：按需抽象；面向组件；定制推特。</p>
+
+<h1>按需抽象 Abstraction on Demand</h1>
+
+<p>这个词是我看一个博客<sup>1</sup>的时候想到的。它让我想起了之前自己的编程体会。简单的来说就是在解决任意问题的时候先用最直接的方法来处理，然后回头观察，系统中是否出现重复的代码或模式，如果有，对他们进行抽象，减少代码。没有重复模式不要提前过度优化。</p>
+
+<p>Framework 的出现就是为了抽象某一领域重复出现的模式。但是实际使用的时候我发现他们帮助并没有预想的那么大，尤其是在 JavaScript 领域，框架层出不穷，但是学习成本却愈发增加，magic 和 convention 越来越多，解决的抽象却未有十足的长进。JavaScript 这门语言其实很灵活，解决各种模式都不需要庞大的代码。没有必要为解决特定的问题引入一整套解决方案，往往杀鸡用牛刀。Knuth 说“过早优化是万恶之源”。引入不需要的抽象就是过早优化的一个体现。</p>
+
+<p>Coolol 没有使用任何现有的框架，所以代码体积非常精简，逻辑也非常简单。在写作初期，我只给它设定了两个概念：组件（Component）和服务（Service）。组件描述了一个带视图和逻辑的对象，服务描述了一个全局的后台对象。服务很好理解，它们是全局的单例（Singleton），任何人都可以调用它们。至于组件，下一节会讲到他们。</p>
+
+<p>服务里有很多有趣的抽象。比如Utils，放的都是我经常用到函数。函数是最简单，最常见的抽象<sup>2</sup>，像是<code>document.querySelector()</code>用的非常多，所以就仿 jQuery 的语法，把它变成<code>$()</code>；经常要迭代一个 object 的 key 和 value，就写了一个<code>forEachKeyValue(object, callback)</code>，然后就可以写成<code>$.forEachKeyValue(obj, (k,v) =&gt; { xxx; })</code>，而不用繁琐的、可读性差的<code>Object.keys(obj).forEach((k) =&gt; { var v=obj[k]; xxx; }</code>。还有稍微复杂一些的函数，像是<code>$.registerObjectCallback(obj, callback)</code>和<code>$.updateObject(obj, {field: new_value, ...})</code>。前者会将一个 callback 函数绑定到一个对象上，而后者则会更新一个对象的多个键值并触发全部绑定的 callback，然后移除 callback 列表。这样两个总共三十几行的函数便可完成数据双向绑定的设计模式。而且机制非常透明，就是函数调用，没有任何隐藏的 magic。</p>
+
+<p><small></p>
+
+<ol>
+<li><a href="http://bitworking.org/news/2014/05/zero_framework_manifesto">No more JS frameworks</a></li>
+<li>严格的来说，还有比函数更简单的抽象，比如说变量，它把对表达式的值的引用抽象为一个符号。</li>
+</ol>
+
+
+<p></small></p>
+<div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'ranmocyblog'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><a class="dsq-brlink" href="http://disqus.com">comments powered by<span class="logo-disqus">Disqus</span></a></article><footer><div class="piece"><span>我努力将诸多人格中微小的片面拼合。</span><span>我拨开我的大脑，只为博君一笑。</span></div><div class="piece"><span>Designed by: <a href='/about/' rel="author" title="Ranmocy">Ranmocy</a></span><span>Hosted by: <a href='https://github.com/' rel="friend" title="Github" target="_blank">Github</a>/<a href='https://gitcafe.com/' rel="friend" title="GitCafe" target="_blank">GitCafe</a></span></div><div class="piece"><span>&copy;Copyright 1991-2016 Ranmocy.</span><span>All Rights Reserved.</span></div></footer><script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-20961770-4']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();</script></body></html>
