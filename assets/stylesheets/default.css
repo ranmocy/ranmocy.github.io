@@ -3,7 +3,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local("Raleway"), url(/Raleway.woff) format("woff"); }
+  src: local("Raleway"), url(/raleway.woff) format("woff"); }
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
   color: #555;
