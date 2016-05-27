@@ -23,9 +23,9 @@
 
 <p>Framework 的出现就是为了抽象某一领域重复出现的模式。但是实际使用的时候我发现他们帮助并没有预想的那么大，尤其是在 JavaScript 领域，框架层出不穷，但是学习成本却愈发增加，magic 和 convention 越来越多，解决的抽象却未有十足的长进。JavaScript 这门语言其实很灵活，解决各种模式都不需要庞大的代码。没有必要为解决特定的问题引入一整套解决方案，往往杀鸡用牛刀。Knuth 说“过早优化是万恶之源”。引入不需要的抽象就是过早优化的一个体现。</p>
 
-<p>Coolol 没有使用任何现有的框架，所以代码体积非常精简，逻辑也非常简单。在写作初期，我只给它设定了两个概念：组件（Component）和服务（Service）。组件描述了一个带视图和逻辑的对象，服务描述了一个全局的后台对象。服务很好理解，它们是全局的单例（Singleton），任何人都可以调用它们。至于组件，下一节会讲到他们。</p>
+<p>Coolol 没有使用任何现有的框架，所以代码体积非常精简，逻辑也很直观。在写作初期，我只给它设定了两个概念：组件（Component）和服务（Service）。组件描述了一个带视图和逻辑的对象，服务描述了一个全局的后台对象。服务很好理解，它们是全局的单例（Singleton），任何人都可以调用它们。至于组件，下一节会讲到他们。</p>
 
-<p>服务里有很多有趣的抽象。比如Utils，放的都是我经常用到函数。函数是最简单，最常见的抽象<sup>2</sup>，像是<code>document.querySelector()</code>用的非常多，所以就仿 jQuery 的语法，把它变成<code>$()</code>；经常要迭代一个 object 的 key 和 value，就写了一个<code>forEachKeyValue(object, callback)</code>，然后就可以写成<code>$.forEachKeyValue(obj, (k,v) =&gt; { xxx; })</code>，而不用繁琐的、可读性差的<code>Object.keys(obj).forEach((k) =&gt; { var v=obj[k]; xxx; }</code>。还有稍微复杂一些的函数，像是<code>$.registerObjectCallback(obj, callback)</code>和<code>$.updateObject(obj, {field: new_value, ...})</code>。前者会将一个 callback 函数绑定到一个对象上，而后者则会更新一个对象的多个键值并触发全部绑定的 callback，然后移除 callback 列表。这样两个总共三十几行的函数便可完成数据双向绑定的设计模式。而且机制非常透明，就是函数调用，没有任何隐藏的 magic。</p>
+<p>服务里有很多有趣的抽象。比如Utils，放的都是我经常用到函数。函数是最简单，最常见的抽象<sup>2</sup>，像是 <code>document.querySelector()</code> 用的非常多，所以就仿 jQuery 的语法，把它变成 <code>$()</code>；经常要迭代一个 object 的 key 和 value，就写了一个 <code>forEachKeyValue(object, callback)</code>，然后就可以写成 <code>$.forEachKeyValue(obj, (k,v) =&gt; { xxx; })</code>，而不用繁琐的、可读性差的 <code>Object.keys(obj).forEach((k) =&gt; { var v=obj[k]; xxx; }</code>。还有稍微复杂一些的函数，像是 <code>$.registerObjectCallback(obj, callback)</code>和<code>$.updateObject(obj, {field: new_value, ...})</code>。前者会将一个 callback 函数绑定到一个对象上，而后者则会更新一个对象的多个键值并触发全部绑定的 callback，然后移除 callback 列表。这样两个总共三十几行的函数便可完成数据双向绑定的设计模式。而且机制非常透明，就是函数调用，没有任何隐藏的 magic。</p>
 
 <p><small></p>
 
@@ -299,7 +299,9 @@ or
 
 <p>The <a href="http://rcaltrain.com">Web version</a> is a HTML5 application, optimized for mobiles, available offline!</p>
 
-<p>Also there is a <a href="https://itunes.apple.com/us/app/rcaltrain/id933651977?mt=8">iOS version</a> written in Swift.</p>
+<p>The <a href="https://itunes.apple.com/us/app/rcaltrain/id933651977?mt=8">iOS version</a> written in Swift.</p>
+
+<p>The <a href="https://play.google.com/store/apps/details?id=me.ranmocy.rcaltrain">Android version</a> supports Android 4.03 and up.</p>
 
 <p>All versions are open sourced.
 Fork me at <a href="https://github.com/ranmocy/rCaltrain">Github</a>.</p>
@@ -1722,17 +1724,17 @@ git commit -m 'CLASSCODE HW1 update'
 我突然想到要打电话注销银行卡。不过我舍不得怀抱，又抱了一会。</p>
 
 <p>醒来。</p>
-]]></content></entry><entry><title type="text">快速排序与计数排序的复杂度分析</title><link href="http://ranmocy.info//tech/快速排序与计数排序的复杂度/" type="text/html" /><link href="http://ranmocy.info//tech/快速排序与计数排序的复杂度//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:快速排序与计数排序的复杂度分析</id><created>2013-12-04T14:27:50-0800</created><updated>2014-09-12T06:34:32-0700</updated><published>2013-12-04T14:27:50-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>所有学习过排序算法的人都知道，
+]]></content></entry><entry><title type="text">快速排序与计数排序的复杂度分析</title><link href="http://ranmocy.info//tech/快速排序与计数排序的复杂度/" type="text/html" /><link href="http://ranmocy.info//tech/快速排序与计数排序的复杂度//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:快速排序与计数排序的复杂度分析</id><created>2013-12-04T14:27:50-0800</created><updated>2016-04-18T05:11:32-0700</updated><published>2013-12-04T14:27:50-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>所有学习过排序算法的人都知道，
 快速排序（Quick Sort）的时间复杂度为 <code>O(n*lg(n))</code>， <code>n</code> 为需要排序的数的个数；
 而计数排序（Counting Sort）的时间复杂度为 <code>O(m+n)</code>，<code>n</code> 为需要排序的数的个数，<code>m</code> 为数据的范围。</p>
 
-<p>看起来计数排序时间复杂度要比快速排序的时间复杂度要低，但是实际上我接下来就会证明他们的复杂度其实是一样的。</p>
+<p>看起来计数排序时间复杂度要比快速排序的时间复杂度要低，但是实际上我接下来就会证明<em>计数排序时间复杂度并不比快速排序低，甚至会更高</em>。</p>
 
-<p>问题的复杂度的一般化定义是关于输入字串的长度 <code>w</code> 的函数，也就是说要相当于待排序的数组在内存中的长度，
+<p>问题的复杂度的一般化定义是关于输入字串的长度 <code>w</code> 的函数，也就是说要等价于待排序的数组在内存中的长度，
 所以 <code>w = n*lg(m)</code>。
 由于无论何种排序算法，都需要完整的读入整个字符串，并输出同等长度的字符串，所以任何排序算法的时间复杂度至少为 <code>O(w)</code>。</p>
 
-<p>故，计数排序的时间复杂度实际为 <code>O(w+m+n+w) = O(w)</code>。</p>
+<p>故，计数排序的时间复杂度实际为 <code>O(w+m+n+w) = O(w+m)</code>，其至少为 <code>O(w)</code>。当 <code>n</code> 很小，但是 <code>m</code> 很大的时候，会变为 <code>O(m)</code>。</p>
 
 <p>再来看快速排序：</p>
 
@@ -1746,17 +1748,11 @@ git commit -m 'CLASSCODE HW1 update'
 这样，所有相等的数只会处理一遍，函数的时间复杂度仍然为 <code>O(n)</code>。
 整体的时间复杂度变为 <code>O(n*lg(p))</code>，其中 <code>p</code> 为待排序的数字中不同的数的个数。</p>
 
-<p>所以我们可以知道：</p>
-
-<ol>
-<li><code>1 &lt;= p &lt;= n</code>：因为我们只有 <code>n</code> 个数，至多有 <code>n</code> 个不同的数。</li>
-<li><code>1 &lt;= n &lt;= m</code>：因为我们数据范围只有 <code>m</code>，至多有 <code>m</code> 个不同的数。</li>
-</ol>
-
+<p>所以我们可以知道 <code>1 &lt;= p &lt;= m</code>，因为我们数据范围只有 <code>m</code>，至多有 <code>m</code> 个不同的数。</p>
 
 <p>于是快速排序的时间复杂度实际为 <code>O(n*lg(m)) = O(w)</code>。</p>
 
-<p>所以计数排序和快速排序的时间复杂度是同级的，均为 <code>O(w)</code>。</p>
+<p>所以计数排序不小于快速排序的时间复杂度 <code>O(w)</code>，当 <code>m</code> 很大的时候，甚至比快速排序复杂度更高。</p>
 ]]></content></entry><entry><title type="text">浪客</title><link href="http://ranmocy.info//dream/浪客/" type="text/html" /><link href="http://ranmocy.info//dream/浪客//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:浪客</id><created>2013-11-09T08:10:40-0800</created><updated>2013-11-09T08:10:40-0800</updated><published>2013-11-09T08:10:40-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>一个外野，一座地下城，里面通道纵横，真正的地下世界。
 我在里面隐居或是潜伏或是就单纯是个喽啰。
 在里面打杂。</p>
@@ -2155,7 +2151,7 @@ Emacs 有着 Vi 本质，nano 有着 Vi 本质，甚至 Notepad 也有 Vi 本质
                           Version 1, July 2013
 </code></pre>
 
-<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#114;&#97;&#110;&#109;&#x6f;&#x63;&#121;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;">&#x72;&#97;&#110;&#109;&#111;&#99;&#121;&#x40;&#103;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#109;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#x72;&#97;&#x6e;&#109;&#111;&#x63;&#121;&#x40;&#x67;&#109;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x72;&#x61;&#110;&#x6d;&#111;&#99;&#x79;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;</a></p>
 
 <p>Permission to use, copy, modify, and/or distribute this license for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
@@ -2400,6 +2396,23 @@ sudo dpkg-reconfigure ca-certificates
 <li><a href="https://github.com/codegram/pelusa">Pelusa</a></li>
 </ul>
 
+]]></content></entry><entry><title type="text">愤怒</title><link href="http://ranmocy.info//dream/愤怒/" type="text/html" /><link href="http://ranmocy.info//dream/愤怒//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:愤怒</id><created>2013-05-05T07:35:17-0700</created><updated>2013-05-05T07:35:17-0700</updated><published>2013-05-05T07:35:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我坐在一台电脑前，进行语音通话，对方是一名学生的母亲，还有我的母亲。
+我们在讲述这位男生的事情。
+这名男生本是我的同学，强壮而目中无人，长期欺负我，我愤怒，但是我从未表现出来。
+只到有一天我忍无可忍，我要反击。
+我突然增长了许多力量，我抓住他的脚踝，甩了半圈，从空中砸到地上。
+我听到咔嚓一声，我知道他的腿断了。
+他还是大声哭救，但是周围的人都吓呆了，一动不动，他们想不到平时这么好欺负的我竟然可以如此爆发。
+我并没有停歇下来，我跨在他的身上，朝脸部重重的砸下了拳头。</p>
+
+<p>那位母亲又抽噎起来，我母亲安静的与她对话着。
+这一切让我感到厌恶，我看到了自恃弱者的姿态，她只是在博取同情，而我不会同情博取同情的弱者。
+他母亲说正是由于我的原因，这名男生从此一蹶不振，身心俱残，还有一名女生因此而跳楼，这个学校因为这些丑闻人们纷纷离去，整个校园荒芜一片，</p>
+
+<p>我离开电脑前，走出了屋子，看到校园里果真是荒芜一片，我静静地看着不远处有个姑娘走来。
+她走到我的面前，小心的点了下头，我讨厌这种感觉，我无意伤害不强壮的人，他们没有必要害怕我，我只是在面临欺压的时候强力反抗而已。
+我招呼了她，问她来这干嘛，她说要看一下那个男生的母亲或是送个东西什么的，等一下再来找我聊天。
+我没有说话，摆摆手让她进去了。</p>
 ]]></content></entry><entry><title type="text">如何修改 Git 历史中的作者名字</title><link href="http://ranmocy.info//tech/howto-modify-author-name-in-git-history/" type="text/html" /><link href="http://ranmocy.info//tech/howto-modify-author-name-in-git-history//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:如何修改 Git 历史中的作者名字</id><created>2013-05-05T07:35:17-0700</created><updated>2013-05-05T07:35:17-0700</updated><published>2013-05-05T07:35:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<pre><code>git filter-branch --commit-filter '
 if [ "$GIT_COMMITTER_NAME" = "riku" ]; then export GIT_COMMITTER_NAME="Riku"; fi;
 if [ "$GIT_COMMITTER_NAME" = "ranmocy" ]; then export GIT_COMMITTER_NAME="Ranmocy Sheng"; fi;
@@ -2420,23 +2433,6 @@ if [ "$GIT_COMMITTER_NAME" = "jimmy" ]; then export GIT_COMMITTER_NAME="Jimmy Hu
 if [ "$GIT_COMMITTER_NAME" = "ghosTM55" ]; then export GIT_COMMITTER_NAME="Thomas Yao"; fi;
 git commit-tree "$@"'
 </code></pre>
-]]></content></entry><entry><title type="text">愤怒</title><link href="http://ranmocy.info//dream/愤怒/" type="text/html" /><link href="http://ranmocy.info//dream/愤怒//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:愤怒</id><created>2013-05-05T07:35:17-0700</created><updated>2013-05-05T07:35:17-0700</updated><published>2013-05-05T07:35:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我坐在一台电脑前，进行语音通话，对方是一名学生的母亲，还有我的母亲。
-我们在讲述这位男生的事情。
-这名男生本是我的同学，强壮而目中无人，长期欺负我，我愤怒，但是我从未表现出来。
-只到有一天我忍无可忍，我要反击。
-我突然增长了许多力量，我抓住他的脚踝，甩了半圈，从空中砸到地上。
-我听到咔嚓一声，我知道他的腿断了。
-他还是大声哭救，但是周围的人都吓呆了，一动不动，他们想不到平时这么好欺负的我竟然可以如此爆发。
-我并没有停歇下来，我跨在他的身上，朝脸部重重的砸下了拳头。</p>
-
-<p>那位母亲又抽噎起来，我母亲安静的与她对话着。
-这一切让我感到厌恶，我看到了自恃弱者的姿态，她只是在博取同情，而我不会同情博取同情的弱者。
-他母亲说正是由于我的原因，这名男生从此一蹶不振，身心俱残，还有一名女生因此而跳楼，这个学校因为这些丑闻人们纷纷离去，整个校园荒芜一片，</p>
-
-<p>我离开电脑前，走出了屋子，看到校园里果真是荒芜一片，我静静地看着不远处有个姑娘走来。
-她走到我的面前，小心的点了下头，我讨厌这种感觉，我无意伤害不强壮的人，他们没有必要害怕我，我只是在面临欺压的时候强力反抗而已。
-我招呼了她，问她来这干嘛，她说要看一下那个男生的母亲或是送个东西什么的，等一下再来找我聊天。
-我没有说话，摆摆手让她进去了。</p>
 ]]></content></entry><entry><title type="text">变强</title><link href="http://ranmocy.info//diary/变强/" type="text/html" /><link href="http://ranmocy.info//diary/变强//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:变强</id><created>2013-04-13T06:23:42-0700</created><updated>2013-04-13T06:23:42-0700</updated><published>2013-04-13T06:23:42-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>之前有段时间过的很愉快，但是回过头想想自己却并没有变强多少。
 所以这种幸福感不过是来源于自己的需求降低到自己的能力水平得到的满足。
 这种满足是虚假的，无用的。
@@ -2554,6 +2550,18 @@ Rails：</p>
 
 <p>这次的迁移主要问题出现在 Mongoid 这个包上，不过官方提供了2.0到3.0的<a href="http://mongoid.org/en/mongoid/docs/upgrading.html">升级说明</a>。
 这也告诉我们紧跟社区保持最新版本的好处。</p>
+]]></content></entry><entry><title type="text">在 Bundler 里面运行 Bundler</title><link href="http://ranmocy.info//tech/在 bundler 里面运行 bundler/" type="text/html" /><link href="http://ranmocy.info//tech/在 bundler 里面运行 bundler//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:在 Bundler 里面运行 Bundler</id><created>2013-04-12T19:07:17-0700</created><updated>2013-04-12T19:07:17-0700</updated><published>2013-04-12T19:07:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>当 Bundler 被加载两遍但却不是同一个位置的包，
+运行会报错，一般是某个包文件没有找到。</p>
+
+<p>比如我正在使用 Ruby 2.0，
+想用 Rake 命令运行 <code>rvm 1.8.7 do bundle install</code> 同步在 1.8.7 下的 Gems，
+除非原本已经安装好了所有的包，否则就会报错找不到修改的包文件。</p>
+
+<p>问题原因在于 Bundler 在运行的时候会检查环境变量来确定自身的位置，
+所以只要去掉这个环境变量就可以了，
+将命令改为 <code>env -u RUBYOPT rvm 1.8.7 do bundle install</code> 就可以正常运行了。</p>
+
+<p>这个在写 Gem 的时候自动配合 Guard 自动跑 Bundler 和 RSpec 会非常有用。</p>
 ]]></content></entry><entry><title type="text">Xiami地址加密算法</title><link href="http://ranmocy.info//tech/xiami地址加密算法/" type="text/html" /><link href="http://ranmocy.info//tech/xiami地址加密算法//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Xiami地址加密算法</id><created>2013-04-12T19:07:17-0700</created><updated>2013-04-12T19:07:17-0700</updated><published>2013-04-12T19:07:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h1>Xiami 地址加密的算法</h1>
 
 <pre><code>remain_str = "hFaF4%52pt%m155E43t2i14E39pF.75261%fn68_1931e88121A.t%%779%x%2274.2i2FF%_m"
@@ -2596,18 +2604,6 @@ end
 # address = "http://f1.xiami.net/11768/454588/02_1770361274_2491919.mp3"
 address = CGI::unescape(address).gsub('^', '0')
 </code></pre>
-]]></content></entry><entry><title type="text">在 Bundler 里面运行 Bundler</title><link href="http://ranmocy.info//tech/在 bundler 里面运行 bundler/" type="text/html" /><link href="http://ranmocy.info//tech/在 bundler 里面运行 bundler//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:在 Bundler 里面运行 Bundler</id><created>2013-04-12T19:07:17-0700</created><updated>2013-04-12T19:07:17-0700</updated><published>2013-04-12T19:07:17-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>当 Bundler 被加载两遍但却不是同一个位置的包，
-运行会报错，一般是某个包文件没有找到。</p>
-
-<p>比如我正在使用 Ruby 2.0，
-想用 Rake 命令运行 <code>rvm 1.8.7 do bundle install</code> 同步在 1.8.7 下的 Gems，
-除非原本已经安装好了所有的包，否则就会报错找不到修改的包文件。</p>
-
-<p>问题原因在于 Bundler 在运行的时候会检查环境变量来确定自身的位置，
-所以只要去掉这个环境变量就可以了，
-将命令改为 <code>env -u RUBYOPT rvm 1.8.7 do bundle install</code> 就可以正常运行了。</p>
-
-<p>这个在写 Gem 的时候自动配合 Guard 自动跑 Bundler 和 RSpec 会非常有用。</p>
 ]]></content></entry><entry><title type="text">Howto Enable HiDPI in MacOS 10.8 Mountain Lion</title><link href="http://ranmocy.info//tech/howto-enable-hidpi-in-macos-10.8-mountain-lion/" type="text/html" /><link href="http://ranmocy.info//tech/howto-enable-hidpi-in-macos-10.8-mountain-lion//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Enable HiDPI in MacOS 10.8 Mountain Lion</id><created>2013-03-11T00:47:53-0700</created><updated>2013-03-11T00:47:53-0700</updated><published>2013-03-11T00:47:53-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>HiDPI is try to use 2x2 pixel to present 1x1 pixel</p>
 
 <p>The traditional way to enable it is to use Quartz Debug.
@@ -2762,27 +2758,6 @@ $ make install
 <p>如果没有这种相对稳定的总结出来的构词法、语法、句法，人们学习语言的唯一方法就是学习全部可能的单词、句子，而这几乎是不可能的，而且抹杀了创造力，相当于将整个设计空间遍历而非定向构造。语言所存在的设计空间十分巨大，只有定向构造才是更为有效的方法，尤其是语言本身的作用在于记录和传递信息，它所被使用的主体一直在变化之中，只有不停的构造、变化、总结才能符合主体的需求。</p>
 
 <p>人类在对知识的总结会加速后人的学习速度。所以虽然我们处于一个知识信息爆炸的时代，人们对于特定领域的学习速度是会不断提升的。加上社会整体是由每个个体有机组织起来的，每个人专属一个特定的领域（非常细化的领域），所以社会整体的发展速度只增不减，而且随着人口爆炸指数增加。唯一的问题就是所有的生命都会面临的问题，就是资源的限制。随着公共资源领域的扩展，每个单体人所能享受的资源将会大大增加，而社会整体的人均资源负担却会降低。</p>
-]]></content></entry><entry><title type="text">滑水</title><link href="http://ranmocy.info//dream/滑水/" type="text/html" /><link href="http://ranmocy.info//dream/滑水//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:滑水</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>一个小孩从森林里走出来，脚上穿着一个巨大的像独木舟或是龙舟一样的鞋。他一下子跳出来了。突然我发现他脚下不是坚实的土地，而是波浪起伏的水面，他两只脚稳稳的踩在水面上，像滑冰一样在水面滑行。
-举行滑水比赛。每个人都有了一套这样的鞋子，我们在操场上滑行着，这是我小学的操场。
-我快速的在人群中穿梭，双手在空中挥舞，我可以一只脚高速度大转弯持续很长时间，我感受到了腿部肌肉绷得紧紧的。
-我决定到更远的地方去。我向校门滑去，校门是两扇高大的铁栏杆，用铁链铰在一起，中间有很大的间隙，上面有一个女生想要翻过去。我直接冲向中间的间隙，但是第一次骻骨卡住了，我侧了一下身就挤过去了。
-回头看到那个女生还没有翻过来，我决定要帮她。大门好像一下子变得好矮，又变得柔软，如同上方就是铁链一样波动着。我帮她把铁链往下压并固定住，她又试了几次，终于过来了。</p>
-
-<p>我决定去旅行。好像有一个目标，又十分的模糊，也许是一个比赛的终点，又好像是比谁去的地方有趣，也许只是我单纯的想去。
-我和其他两个人横穿了马路，抄小道踩了草坪。一束明亮的灯光打到我右侧的脸上，我扭头一看，一辆警车向我们开来，有一个人向我们拍照，我站在离警察最近的位置，估计脸会非常清楚的记录下来。我很清楚，我们的记录要不干净了。
-不过我们没有停下来，继续踩草坪。不过当我来到海边的时候，我意识到天已经黑了，而我周围一个人都没有，我不知道其他比赛的人都在哪里。远远的海里有很多人，点点星光，但我不知道他们当中谁是比赛的人。我不知道方向。
-我拿出iPhone，搜索地图。我看到我在一个大陆边缘，面前是大海，或者只是一片很大的湖，中间有一个小岛，我想去那里，我意识到我很熟悉那个岛的名字，应该是现实中的名字，我当时随口就说出来了，好像是个什么镇，但是我现在想不起来了。这个岛的北边一点有一座岛，我应该也非常熟悉。再北一点有一个小回字形的地方，我发现它在地图上是淡蓝色的，这是海水的颜色，这意味着他是沉在海底的城市，回字形逐层下降，像梯田一样的方形海沟，也许不应该叫海沟，叫海坑比较合适。
-我站在海边，但这里不是沙滩，而是距离海面有些距离的堤坝，好像星海广场。
-我也许是直接跳下去的，也许是找到了路，总之，我现在在水上，溜冰一样的滑水，滑向那个小岛。</p>
-
-<p>不知何时，我到达了小岛，我走在一个下降通道中，前方像是地下人行通道里的商业街一样。斜前方有个长椅，上面坐着很多一动不动的人，像石像一样在等待着什么人，而且不是我，我很清楚，虽然一动不动但他们都是活的。
-我遇到了我的母亲，还有我二舅。他们问我我要去哪里，我说我还不知道，我要想一想。我又拿出iPhone来看地图，我放大了我所在的小岛我意识到我是从小岛的西北角登陆的，这个小岛只有一条通道，从西北角向南再折向东直到东南角，贯穿小岛。东北面是一座巨大的山，占有了小岛三分之二的面积，高耸入云。
-我想了一下，说我想要滑水去南京。南京在这座岛的北边，有些远。南京是一座非常大的城市，地图上看不到它的北边界，回字形，一层一层的城墙，最外面一层沉在水中，我不知道城门在哪里。但是我想去。
-母亲和舅舅用一种深沉但不置可否的表情看着我，对我说，南京很远，你去有什么意义。我说我想去。他们说，你要想好。我想有什么要想的，这么近的旅行，我背起包出门了。
-出门后我意识到现在已经是半夜了，四周漆黑一片，只有远处有零散的点光源。我突然担心起来我会划不过去，半途没有体力的话又没有办法睡觉。可我又十分想去，我觉得我必须去。也许我应该在当地找家旅馆先睡一觉，同时我又感觉这个天永远也不会亮起来，太阳永远也不会再升起。
-我在这小纠结中听到了起床的铃声。</p>
-
-<p>2012-11-13早</p>
 ]]></content></entry><entry><title type="text">Water Skiing</title><link href="http://ranmocy.info//dream/water-skiing/" type="text/html" /><link href="http://ranmocy.info//dream/water-skiing//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:Water Skiing</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>A boy was coming out from the forest,
 wearing giant shoes like canoes or dragon boats on his feet.
 He jumped out suddenly.
@@ -2894,6 +2869,45 @@ But I also felt that the sky would never light up, and the sun would never rise 
 I heard the alarm in this little tangle.</p>
 
 <p>2012-11-13 Morning</p>
+]]></content></entry><entry><title type="text">滑水</title><link href="http://ranmocy.info//dream/滑水/" type="text/html" /><link href="http://ranmocy.info//dream/滑水//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:滑水</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>一个小孩从森林里走出来，脚上穿着一个巨大的像独木舟或是龙舟一样的鞋。他一下子跳出来了。突然我发现他脚下不是坚实的土地，而是波浪起伏的水面，他两只脚稳稳的踩在水面上，像滑冰一样在水面滑行。
+举行滑水比赛。每个人都有了一套这样的鞋子，我们在操场上滑行着，这是我小学的操场。
+我快速的在人群中穿梭，双手在空中挥舞，我可以一只脚高速度大转弯持续很长时间，我感受到了腿部肌肉绷得紧紧的。
+我决定到更远的地方去。我向校门滑去，校门是两扇高大的铁栏杆，用铁链铰在一起，中间有很大的间隙，上面有一个女生想要翻过去。我直接冲向中间的间隙，但是第一次骻骨卡住了，我侧了一下身就挤过去了。
+回头看到那个女生还没有翻过来，我决定要帮她。大门好像一下子变得好矮，又变得柔软，如同上方就是铁链一样波动着。我帮她把铁链往下压并固定住，她又试了几次，终于过来了。</p>
+
+<p>我决定去旅行。好像有一个目标，又十分的模糊，也许是一个比赛的终点，又好像是比谁去的地方有趣，也许只是我单纯的想去。
+我和其他两个人横穿了马路，抄小道踩了草坪。一束明亮的灯光打到我右侧的脸上，我扭头一看，一辆警车向我们开来，有一个人向我们拍照，我站在离警察最近的位置，估计脸会非常清楚的记录下来。我很清楚，我们的记录要不干净了。
+不过我们没有停下来，继续踩草坪。不过当我来到海边的时候，我意识到天已经黑了，而我周围一个人都没有，我不知道其他比赛的人都在哪里。远远的海里有很多人，点点星光，但我不知道他们当中谁是比赛的人。我不知道方向。
+我拿出iPhone，搜索地图。我看到我在一个大陆边缘，面前是大海，或者只是一片很大的湖，中间有一个小岛，我想去那里，我意识到我很熟悉那个岛的名字，应该是现实中的名字，我当时随口就说出来了，好像是个什么镇，但是我现在想不起来了。这个岛的北边一点有一座岛，我应该也非常熟悉。再北一点有一个小回字形的地方，我发现它在地图上是淡蓝色的，这是海水的颜色，这意味着他是沉在海底的城市，回字形逐层下降，像梯田一样的方形海沟，也许不应该叫海沟，叫海坑比较合适。
+我站在海边，但这里不是沙滩，而是距离海面有些距离的堤坝，好像星海广场。
+我也许是直接跳下去的，也许是找到了路，总之，我现在在水上，溜冰一样的滑水，滑向那个小岛。</p>
+
+<p>不知何时，我到达了小岛，我走在一个下降通道中，前方像是地下人行通道里的商业街一样。斜前方有个长椅，上面坐着很多一动不动的人，像石像一样在等待着什么人，而且不是我，我很清楚，虽然一动不动但他们都是活的。
+我遇到了我的母亲，还有我二舅。他们问我我要去哪里，我说我还不知道，我要想一想。我又拿出iPhone来看地图，我放大了我所在的小岛我意识到我是从小岛的西北角登陆的，这个小岛只有一条通道，从西北角向南再折向东直到东南角，贯穿小岛。东北面是一座巨大的山，占有了小岛三分之二的面积，高耸入云。
+我想了一下，说我想要滑水去南京。南京在这座岛的北边，有些远。南京是一座非常大的城市，地图上看不到它的北边界，回字形，一层一层的城墙，最外面一层沉在水中，我不知道城门在哪里。但是我想去。
+母亲和舅舅用一种深沉但不置可否的表情看着我，对我说，南京很远，你去有什么意义。我说我想去。他们说，你要想好。我想有什么要想的，这么近的旅行，我背起包出门了。
+出门后我意识到现在已经是半夜了，四周漆黑一片，只有远处有零散的点光源。我突然担心起来我会划不过去，半途没有体力的话又没有办法睡觉。可我又十分想去，我觉得我必须去。也许我应该在当地找家旅馆先睡一觉，同时我又感觉这个天永远也不会亮起来，太阳永远也不会再升起。
+我在这小纠结中听到了起床的铃声。</p>
+
+<p>2012-11-13早</p>
+]]></content></entry><entry><title type="text">存在</title><link href="http://ranmocy.info//remark/存在/" type="text/html" /><link href="http://ranmocy.info//remark/存在//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:存在</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>What are we?
+我们的存在是什么？
+肉体的存在？精神的存在？</p>
+
+<p>肉体是我们身上所有原子的集合么？
+我们从出生起到现在，从小小的躯体长达成人，几乎身上所有的原子都因新陈代谢而都被替换过，那么哪些是“我们”的原子？说不定你现在的身体上有几个曾经在爱因斯坦的身体上存在过，那么你就由爱因斯坦的一部分组成了么？事实上你的肉体的存在和爱因斯坦根本没有什么关系。
+我们的肉体实际上并不是固定的物质关联，而是一个模糊边界的概念，你没有办法说清楚真皮层是不是你的肉体的一部分，角质层呢？角质层上的你分泌的油脂呢？那些油脂吸附的悬浮颗粒呢？你穿的衣服呢？那义肢又如何？固定在你身上的辅助康复器械，比如钢板，又怎么区分？
+不，根本没有固定的解释，肉体是一个概念，你可以根据时代的演变而修改这个定义。毕竟概念都是人为定义的，为的是交流的通畅，自然是要定义在一个我们经常使用的一个程度上。当下的社会，我们通常意义上将肉体停留在角质层的层次上，只包含由基因决定的与生俱来的生物体部分，不承认人造物属于我们的肉体；但是随着这个是时代的发展，科技的进步，我们的身体会接受越来越多的改造，机械强化、生物医疗改进、人造器官、植入芯片等等，当这些都成为社会的主流的时候，肉体的概念必然会随着人们对自身必不可少的部分的认识的改变而改变，承认这些改造都是人的一部分。而那时候，人类就开始新的进化了。</p>
+
+<p>精神的存在呢？
+What you did decide what you are. What you are doing decide what you will be.
+你的所作所为构成了你的存在。数学上已经证明，任何一个系统，没有办法从内部证明整个系统的真伪。同样，人类没有办法从自身的意识出发证明自身意识的存在。唯一的办法就是利用外部系统的反馈来证明自身，就如同只有照镜子才能知道自己的相貌一样。人在这个世界中存在，借由改变世界来证明自己的存在；人又为作为社会中的一个个体而借由与社会交互来证明自己的存在。所以，影响越大，人类自身的存在感就越强。而反过来，拥有持续影响力的个体概念，我们就认为其是存在的，甚至是“活的”，因为他们存在与整个社会中，从整个社会的层面上来观测，他们都是持续产生影响力而拥有不断演变的能力的个体。莎士比亚的精神，在其肉体消亡之时，借由作品在全人类头脑中的不断映射而存在着，不断演变。</p>
+
+<p>世界的存在？
+世界的存在与精神的存在是等同的问题。同样的，我们没有办法在这个世界中证明这个世界是真实的，因为世界内部是自洽的，但是除非走出这个世界从外部来观测这个世界，否则这个世界的真伪是不可证、不可知的。</p>
+
+<p>生命存在的意义
+生命的存在就是在与熵增原理而抗争。不断的有序化，趋向于区域内的熵减。</p>
 ]]></content></entry><entry><title type="text">长廊</title><link href="http://ranmocy.info//poem/长廊/" type="text/html" /><link href="http://ranmocy.info//poem/长廊//index.html" rel="alternate" type="text/html" /><id>urn:uuid:poem:长廊</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="poem"></category><content mode="escaped" type="html"><![CDATA[<pre><code>携着爱疯，独自
 自习在空旷、空旷
 又寂寞的图书馆长廊，
@@ -2917,30 +2931,12 @@ I heard the alarm in this little tangle.</p>
 用着爱疯的美丽姑娘。
 ——盛万章《长廊》
 </code></pre>
-]]></content></entry><entry><title type="text">存在</title><link href="http://ranmocy.info//remark/存在/" type="text/html" /><link href="http://ranmocy.info//remark/存在//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:存在</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>What are we?
-我们的存在是什么？
-肉体的存在？精神的存在？</p>
-
-<p>肉体是我们身上所有原子的集合么？
-我们从出生起到现在，从小小的躯体长达成人，几乎身上所有的原子都因新陈代谢而都被替换过，那么哪些是“我们”的原子？说不定你现在的身体上有几个曾经在爱因斯坦的身体上存在过，那么你就由爱因斯坦的一部分组成了么？事实上你的肉体的存在和爱因斯坦根本没有什么关系。
-我们的肉体实际上并不是固定的物质关联，而是一个模糊边界的概念，你没有办法说清楚真皮层是不是你的肉体的一部分，角质层呢？角质层上的你分泌的油脂呢？那些油脂吸附的悬浮颗粒呢？你穿的衣服呢？那义肢又如何？固定在你身上的辅助康复器械，比如钢板，又怎么区分？
-不，根本没有固定的解释，肉体是一个概念，你可以根据时代的演变而修改这个定义。毕竟概念都是人为定义的，为的是交流的通畅，自然是要定义在一个我们经常使用的一个程度上。当下的社会，我们通常意义上将肉体停留在角质层的层次上，只包含由基因决定的与生俱来的生物体部分，不承认人造物属于我们的肉体；但是随着这个是时代的发展，科技的进步，我们的身体会接受越来越多的改造，机械强化、生物医疗改进、人造器官、植入芯片等等，当这些都成为社会的主流的时候，肉体的概念必然会随着人们对自身必不可少的部分的认识的改变而改变，承认这些改造都是人的一部分。而那时候，人类就开始新的进化了。</p>
-
-<p>精神的存在呢？
-What you did decide what you are. What you are doing decide what you will be.
-你的所作所为构成了你的存在。数学上已经证明，任何一个系统，没有办法从内部证明整个系统的真伪。同样，人类没有办法从自身的意识出发证明自身意识的存在。唯一的办法就是利用外部系统的反馈来证明自身，就如同只有照镜子才能知道自己的相貌一样。人在这个世界中存在，借由改变世界来证明自己的存在；人又为作为社会中的一个个体而借由与社会交互来证明自己的存在。所以，影响越大，人类自身的存在感就越强。而反过来，拥有持续影响力的个体概念，我们就认为其是存在的，甚至是“活的”，因为他们存在与整个社会中，从整个社会的层面上来观测，他们都是持续产生影响力而拥有不断演变的能力的个体。莎士比亚的精神，在其肉体消亡之时，借由作品在全人类头脑中的不断映射而存在着，不断演变。</p>
-
-<p>世界的存在？
-世界的存在与精神的存在是等同的问题。同样的，我们没有办法在这个世界中证明这个世界是真实的，因为世界内部是自洽的，但是除非走出这个世界从外部来观测这个世界，否则这个世界的真伪是不可证、不可知的。</p>
-
-<p>生命存在的意义
-生命的存在就是在与熵增原理而抗争。不断的有序化，趋向于区域内的熵减。</p>
+]]></content></entry><entry><title type="text">世界的真实</title><link href="http://ranmocy.info//remark/世界的真实/" type="text/html" /><link href="http://ranmocy.info//remark/世界的真实//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:世界的真实</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人们很少认同一句话：人类整体追求的并不是我们所存在的这个世界的真实，而是我们所面对的世界的真实。</p>
 ]]></content></entry><entry><title type="text">工具的选择</title><link href="http://ranmocy.info//remark/工具的选择/" type="text/html" /><link href="http://ranmocy.info//remark/工具的选择//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:工具的选择</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>超过一定优秀程度的工具选择大战是没有意义的，
 因为最重要的不是选择具体一个工具，而是整个工具链的选择和搭配，是整个工具系统。
 具有一定基本的理智的观点冲突，同样也不可能完全分出胜负，
 因为最重要的不是一个观点，而是整个观点系统，是你的价值观。
 所以两个充分尊重对方，充分理智的人争论永远都是以找到价值观的分歧点而告终。</p>
-]]></content></entry><entry><title type="text">世界的真实</title><link href="http://ranmocy.info//remark/世界的真实/" type="text/html" /><link href="http://ranmocy.info//remark/世界的真实//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:世界的真实</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人们很少认同一句话：人类整体追求的并不是我们所存在的这个世界的真实，而是我们所面对的世界的真实。</p>
 ]]></content></entry><entry><title type="text">情绪</title><link href="http://ranmocy.info//idea/emotions/" type="text/html" /><link href="http://ranmocy.info//idea/emotions//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:情绪</id><created>2012-08-15T17:36:53-0700</created><updated>2012-08-15T17:36:53-0700</updated><published>2012-08-15T17:36:53-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>为什么人会有负面情绪呢？
 悲伤的，愤怒的，消沉的。这些有什么用？
 为什么进化的过程中会产生出这些？
@@ -3348,54 +3344,100 @@ If you want to read HTML email in mew:</p>
 
 
 <h1>Finish setup-mew-in-emacs</h1>
-]]></content></entry><entry><title type="text">Howto Setup Emacs-w3m</title><link href="http://ranmocy.info//tech/howto-setup-emacs-w3m/" type="text/html" /><link href="http://ranmocy.info//tech/howto-setup-emacs-w3m//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Setup Emacs-w3m</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>Install w3m</p>
+]]></content></entry><entry><title type="text">方法</title><link href="http://ranmocy.info//idea/method/" type="text/html" /><link href="http://ranmocy.info//idea/method//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:方法</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>//- Methods
+//- Phylosiphy, method</p>
 
-<pre><code>brew install w3m
-</code></pre>
+<p>编程中，程序是处理数据的方法，宏是生成方法的方法。
+哲学中，方法是处理问题的方法，方法论是生成方法的方法。</p>
+]]></content></entry><entry><title type="text">回首2012</title><link href="http://ranmocy.info//diary/回首2012/" type="text/html" /><link href="http://ranmocy.info//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
+精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
+物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
 
-<p>CHECKPOINT:
-  Now you have the w3m under your exec-path.</p>
+<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
+不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
+我觉得现在的我，才敢叫自己的心态为平和。
+这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
+我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
+我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
+虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
 
-<p>Download from http://emacs-w3m.namazu.org/
-Currently newest stable version: http://emacs-w3m.namazu.org/emacs-w3m-1.4.4.tar.gz</p>
+<p>就这一点来说，我对自己很满意。</p>
 
-<p>If you are using Emacs 24, you have to use development version in CVS.</p>
+<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
 
-<pre><code>cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot login
-# No password is set.  Just hit Enter/Return key.
-cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
-</code></pre>
+<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
+虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
+后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
 
-<p>CHECKPOINT:
-  Now you have the source of emacs-w3m, Luke.</p>
+<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
+这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
+所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
+就像是孙猴子逃不过五指山。</p>
 
-<p>Install it.</p>
+<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
 
-<pre><code>cd emacs-w3m
-autoconf # if it is development version
-./configure
-make
-</code></pre>
+<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
 
-<p>Move it to your load path by</p>
+<p>这个世界变化太快，我有些跟不上。</p>
 
-<pre><code>(add-to-list load-path "/your/path/to/emacs-w3m")
-</code></pre>
+<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
+太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
+所以即使我接受了它们，也没有足够的时间去了解它们。
+我迷惑，但是没有人会察觉。</p>
 
-<p>or</p>
+<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
+那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
 
-<pre><code>make install
-</code></pre>
+<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
+在这个过程中发展自己的生存主义。
+福叔说，要极简。</p>
 
-<h1>Now-you-can</h1>
+<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
+现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
 
-<ol>
-<li>(require 'w3m) in your Emacs.</li>
-</ol>
+<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
 
+<p>(´º)</p>
 
-<h1>Finish setup-emacs-w3m</h1>
-]]></content></entry><entry><title type="text">支撑</title><link href="http://ranmocy.info//idea/support/" type="text/html" /><link href="http://ranmocy.info//idea/support//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:支撑</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我还是会脆弱的。最害怕的依旧是自己相信的人不是自己所相信的那个人；自己相信的世界不是自己所相信的世界。</p>
+<p>2013-01-01 01:47</p>
+]]></content></entry><entry><title type="text">独立</title><link href="http://ranmocy.info//idea/indepence/" type="text/html" /><link href="http://ranmocy.info//idea/indepence//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:独立</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>一个人的独立性取决于他所依赖的东西。
+人的生命长度是有限的，即意味着在一定的成长速度范围中，我们只能拥有有限的高度。
+如果要想站得更高，就需要借助于他人的肩膀。
+这即是，“不要重复造轮子”。</p>
+
+<p>但是每一个辅助的肩膀都是一种依赖。
+个人的稳定性依赖于其所依赖的肩膀的稳定性。
+当一个肩膀轰然倒塌的时候，个人也会随之受到影响，甚至也随之倒塌。
+每多一个必须的肩膀，个人的独立性就下降了一点，自由就下降了一点，但是高度随之却增加了一点。
+个中取舍，全在个人。</p>
+
+<p>就社会整体性而言，人们会像蚁群</p>
+]]></content></entry><entry><title type="text">本源之零</title><link href="http://ranmocy.info//philosophy/本源之零/" type="text/html" /><link href="http://ranmocy.info//philosophy/本源之零//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:本源之零</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>这个哲学体系可以说是独立于社会之外的视角来审视这个世界。
+像是从上帝视角来看待这个世界，有时候可能会显得不近人情。</p>
+
+<h2>为什么要探究</h2>
+
+<p>我们的世界充满着对象。
+这些对象有些对我们有利有些对我们有害，我们趋利避害的时候需要找到处理他们的方法。
+一些看起来头头是道的人所说的方法多是从自己的经验或是他人的经验之中总结而来。
+而本源哲学追求的是方法本后的原理，也即意为着是生成方法的方法。</p>
+
+<p>这个思维方式的价值并不仅限于生成方法，而是当你学会向上抽象总结的时候，你可以无限深入下去。
+找到方法的方法，还可以去找方法的方法的方法，无穷无尽也。</p>
+
+<p>不断的抽象，你的世界就会像金字塔一样清晰稳固。
+不断的抽象，你只需更少的要点而去抓住整个世界。</p>
+
+<h2>我们有前提</h2>
+
+<p>所有的事物都有根源，如果不断向其根源探究的话是没有穷尽的。
+所以所有的观点均有前提，不认可前提的话，大可不必继续阅读了。</p>
+
+<h6>闲谈Lisp语言</h6>
+
+<p>抽象的抽象的抽象，就是本源。</p>
+
+<p>我们用计算机来处理实际问题，当问题重复出现的时候，我们就抽象一个通用方法（Function），但是方法本身也重复出现呢？于是，Lisp中出现有个很有趣而且很强大的东西叫做宏（Macro）。</p>
 ]]></content></entry><entry><title type="text">言语有障</title><link href="http://ranmocy.info//philosophy/言语有障/" type="text/html" /><link href="http://ranmocy.info//philosophy/言语有障//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:言语有障</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<h2>语言与思维</h2>
 
 <p>语言是一种记录内心活动的工具，
@@ -3515,57 +3557,32 @@ make
 我们通过交流让他人相信些什么，或是相信我们的理念，或是相信我们可以给他们带来什么样的利益，或是相信我们是他们所无法打败的。</p>
 
 <p>所以语言，是精神界的最高<em>表现</em>。</p>
-]]></content></entry><entry><title type="text">回首2012</title><link href="http://ranmocy.info//diary/回首2012/" type="text/html" /><link href="http://ranmocy.info//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
-精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
-物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
+]]></content></entry><entry><title type="text">Note of Elisp Delimiter</title><link href="http://ranmocy.info//tech/elisp-delimiter.en/" type="text/html" /><link href="http://ranmocy.info//tech/elisp-delimiter.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Elisp Delimiter</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
 
-<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
-不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
-我觉得现在的我，才敢叫自己的心态为平和。
-这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
-我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
-我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
-虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
+<p>This is quote. There is no computing. Just return itself.</p>
 
-<p>就这一点来说，我对自己很满意。</p>
+<pre><code>'(list a b)
+=&gt;(list a b)
+</code></pre>
 
-<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
+<h2>Backquote + Comma</h2>
 
-<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
-虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
-后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
+<p>This is a backquote to return itself,
+but you can use <code>,</code> to computing inside.</p>
 
-<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
-这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
-所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
-就像是孙猴子逃不过五指山。</p>
+<pre><code>`(list ,(car (list 'a 'b)) b)
+=&gt;(list a b)
+</code></pre>
 
-<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
+<h2>Comma + At</h2>
 
-<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
+<p>The expression will be expanded in place.
+Useful for dynamic arguments.</p>
 
-<p>这个世界变化太快，我有些跟不上。</p>
-
-<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
-太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
-所以即使我接受了它们，也没有足够的时间去了解它们。
-我迷惑，但是没有人会察觉。</p>
-
-<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
-那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
-
-<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
-在这个过程中发展自己的生存主义。
-福叔说，要极简。</p>
-
-<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
-现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
-
-<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
-
-<p>(´º)</p>
-
-<p>2013-01-01 01:47</p>
+<pre><code>(setq a (list a b))
+`(list ,@a)
+=&gt;(list a b)
+</code></pre>
 ]]></content></entry><entry><title type="text">效率为王</title><link href="http://ranmocy.info//philosophy/效率为王/" type="text/html" /><link href="http://ranmocy.info//philosophy/效率为王//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:效率为王</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>本文前提条件，若非认同，无须阅读：</p>
 
 <ol>
@@ -3616,6 +3633,54 @@ make
 意即，人们并非会做真正最有效率的事情。
 但是从长远的统计学意义上来看，人们会趋向于选择更有效率的事情，人们在做有效率的事情的时候会更稳定，因为那时他们真的感受到了这个选择的正确性。
 所有存在均有其合理性，即有其发生的因。但是并非所有的存在都是最优的，就像进化并不会让每个器官都达到最优功效，事实上，不断优化正是进化的意义。</p>
+]]></content></entry><entry><title type="text">支撑</title><link href="http://ranmocy.info//idea/support/" type="text/html" /><link href="http://ranmocy.info//idea/support//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:支撑</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我还是会脆弱的。最害怕的依旧是自己相信的人不是自己所相信的那个人；自己相信的世界不是自己所相信的世界。</p>
+]]></content></entry><entry><title type="text">Howto Setup Emacs-w3m</title><link href="http://ranmocy.info//tech/howto-setup-emacs-w3m/" type="text/html" /><link href="http://ranmocy.info//tech/howto-setup-emacs-w3m//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Setup Emacs-w3m</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>Install w3m</p>
+
+<pre><code>brew install w3m
+</code></pre>
+
+<p>CHECKPOINT:
+  Now you have the w3m under your exec-path.</p>
+
+<p>Download from http://emacs-w3m.namazu.org/
+Currently newest stable version: http://emacs-w3m.namazu.org/emacs-w3m-1.4.4.tar.gz</p>
+
+<p>If you are using Emacs 24, you have to use development version in CVS.</p>
+
+<pre><code>cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot login
+# No password is set.  Just hit Enter/Return key.
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+</code></pre>
+
+<p>CHECKPOINT:
+  Now you have the source of emacs-w3m, Luke.</p>
+
+<p>Install it.</p>
+
+<pre><code>cd emacs-w3m
+autoconf # if it is development version
+./configure
+make
+</code></pre>
+
+<p>Move it to your load path by</p>
+
+<pre><code>(add-to-list load-path "/your/path/to/emacs-w3m")
+</code></pre>
+
+<p>or</p>
+
+<pre><code>make install
+</code></pre>
+
+<h1>Now-you-can</h1>
+
+<ol>
+<li>(require 'w3m) in your Emacs.</li>
+</ol>
+
+
+<h1>Finish setup-emacs-w3m</h1>
 ]]></content></entry><entry><title type="text">哲学家</title><link href="http://ranmocy.info//idea/philosopher/" type="text/html" /><link href="http://ranmocy.info//idea/philosopher//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:哲学家</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我渐渐的能体会到哲学家们的痛苦之处了。他们要担负的起整个他们自己构造的世界。
 精心的呵护她，维护她，守护她，那是他们生存的依赖。
 他们因此而最为强大，也因此而最为脆弱。
@@ -3676,75 +3741,6 @@ make
 `(list ,@a)
 =&gt;(list a b)
 </code></pre>
-]]></content></entry><entry><title type="text">方法</title><link href="http://ranmocy.info//idea/method/" type="text/html" /><link href="http://ranmocy.info//idea/method//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:方法</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>//- Methods
-//- Phylosiphy, method</p>
-
-<p>编程中，程序是处理数据的方法，宏是生成方法的方法。
-哲学中，方法是处理问题的方法，方法论是生成方法的方法。</p>
-]]></content></entry><entry><title type="text">Note of Elisp Delimiter</title><link href="http://ranmocy.info//tech/elisp-delimiter.en/" type="text/html" /><link href="http://ranmocy.info//tech/elisp-delimiter.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Elisp Delimiter</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
-
-<p>This is quote. There is no computing. Just return itself.</p>
-
-<pre><code>'(list a b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Backquote + Comma</h2>
-
-<p>This is a backquote to return itself,
-but you can use <code>,</code> to computing inside.</p>
-
-<pre><code>`(list ,(car (list 'a 'b)) b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Comma + At</h2>
-
-<p>The expression will be expanded in place.
-Useful for dynamic arguments.</p>
-
-<pre><code>(setq a (list a b))
-`(list ,@a)
-=&gt;(list a b)
-</code></pre>
-]]></content></entry><entry><title type="text">独立</title><link href="http://ranmocy.info//idea/indepence/" type="text/html" /><link href="http://ranmocy.info//idea/indepence//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:独立</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>一个人的独立性取决于他所依赖的东西。
-人的生命长度是有限的，即意味着在一定的成长速度范围中，我们只能拥有有限的高度。
-如果要想站得更高，就需要借助于他人的肩膀。
-这即是，“不要重复造轮子”。</p>
-
-<p>但是每一个辅助的肩膀都是一种依赖。
-个人的稳定性依赖于其所依赖的肩膀的稳定性。
-当一个肩膀轰然倒塌的时候，个人也会随之受到影响，甚至也随之倒塌。
-每多一个必须的肩膀，个人的独立性就下降了一点，自由就下降了一点，但是高度随之却增加了一点。
-个中取舍，全在个人。</p>
-
-<p>就社会整体性而言，人们会像蚁群</p>
-]]></content></entry><entry><title type="text">本源之零</title><link href="http://ranmocy.info//philosophy/本源之零/" type="text/html" /><link href="http://ranmocy.info//philosophy/本源之零//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:本源之零</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>这个哲学体系可以说是独立于社会之外的视角来审视这个世界。
-像是从上帝视角来看待这个世界，有时候可能会显得不近人情。</p>
-
-<h2>为什么要探究</h2>
-
-<p>我们的世界充满着对象。
-这些对象有些对我们有利有些对我们有害，我们趋利避害的时候需要找到处理他们的方法。
-一些看起来头头是道的人所说的方法多是从自己的经验或是他人的经验之中总结而来。
-而本源哲学追求的是方法本后的原理，也即意为着是生成方法的方法。</p>
-
-<p>这个思维方式的价值并不仅限于生成方法，而是当你学会向上抽象总结的时候，你可以无限深入下去。
-找到方法的方法，还可以去找方法的方法的方法，无穷无尽也。</p>
-
-<p>不断的抽象，你的世界就会像金字塔一样清晰稳固。
-不断的抽象，你只需更少的要点而去抓住整个世界。</p>
-
-<h2>我们有前提</h2>
-
-<p>所有的事物都有根源，如果不断向其根源探究的话是没有穷尽的。
-所以所有的观点均有前提，不认可前提的话，大可不必继续阅读了。</p>
-
-<h6>闲谈Lisp语言</h6>
-
-<p>抽象的抽象的抽象，就是本源。</p>
-
-<p>我们用计算机来处理实际问题，当问题重复出现的时候，我们就抽象一个通用方法（Function），但是方法本身也重复出现呢？于是，Lisp中出现有个很有趣而且很强大的东西叫做宏（Macro）。</p>
 ]]></content></entry><entry><title type="text">岱山县</title><link href="http://ranmocy.info//diary/岱山县/" type="text/html" /><link href="http://ranmocy.info//diary/岱山县//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:岱山县</id><created>2012-06-25T05:25:36-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-25T05:25:36-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>经过一番艰难的决定，还是要出来继续旅游。之前去金山，走的肌腱都有些疼了。平时运动太少了。
 决定的时候，我已经走到了上海火车站。
 这样又要坐四号线绕回去，从旅游集散中心出发了。
