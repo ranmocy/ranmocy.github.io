@@ -100,6 +100,7 @@ module Brain
   end
 
 
+  # Category page for each folder
   class BrainCategory < BrainFile
     def initialize(name, articles)
       @path = Pathname.new("./#{name}/index.html.slim")

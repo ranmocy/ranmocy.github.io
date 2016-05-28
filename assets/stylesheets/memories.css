@@ -1,0 +1,18 @@
+aside#timemachine {
+  position: fixed;
+  text-align: center;
+  margin: 0 1.5em;
+  font-size: 12px; }
+  @media screen and (max-width: 800px) {
+    aside#timemachine {
+      display: none; } }
+  aside#timemachine .time a {
+    color: #333333;
+    line-height: 1.5em; }
+    aside#timemachine .time a:hover, aside#timemachine .time a.active {
+      color: #dc322f;
+      text-decoration: none; }
+    aside#timemachine .time a:hover {
+      font-size: 120%; }
+
+/*# sourceMappingURL=memories.css.map */

@@ -345,24 +345,24 @@ html {
   background-color: #FEFEFE; }
 
 body {
-  margin: 1em auto 10em auto;
+  margin: 0em auto 25% auto;
   color: black;
   font-size: 16px;
   -webkit-font-smoothing: antialiased; }
-  @media screen and (min-width: 1280px) {
+  @media (min-width: 1280px) {
     body {
       width: 60%; } }
-  @media screen and (min-width: 640px) and (max-width: 1280px) {
+  @media (min-width: 640px) and (max-width: 1280px) {
     body {
       width: 80%;
       max-width: 768px; } }
-  @media screen and (max-width: 640px) {
+  @media (max-width: 640px) {
     body {
       width: 100%;
       max-width: 512px; } }
 
 nav {
-  margin: 2em 1em;
+  margin: 2em 0em;
   border: none;
     border-bottom: 1px solid #999999; }
 
