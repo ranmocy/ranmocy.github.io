@@ -15,6 +15,42 @@
     li 人们一直在强调自己拥有的东西往往是他们最缺少的东西。
     li 有激情的事让你亢奋到深夜，让你不觉疲惫的在清晨起来。
     li 自由者，退于野，深山老林五百里，进于世，呼风唤雨三十年。万事可为矣。</p>
+]]></content></entry><entry><title type="text">Google Assistant</title><link href="http://ranmocy.info//remark/google_assistant/" type="text/html" /><link href="http://ranmocy.info//remark/google_assistant//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:Google Assistant</id><created>2016-10-06T08:18:05-0700</created><updated>2016-10-06T08:18:05-0700</updated><published>2016-10-06T08:18:05-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>Google 发布了 Pixel 手机，和新的 Home Launcher。有很多人吐槽它跟 iPhone 多么多么的相似。但是看看初始界面的对比图，你们会发现这里存在一个巨大的差别：图标少了许多。</p>
+
+<p><img src="/remark/pixel_vs_iphone.png" style="box-shadow:none" alt="iPhone vs Pixel"></img></p>
+
+<p>Steven Jobs 开创了 App-based OS 的平台时代，十年朝气蓬勃。然而 Google 对下一个十年的赌注是：App 们已经过时了，我们要用 AI 打造一个全新的人机界面。</p>
+
+<p>如今大厂之争，争得都是平台入口。Google 用一个搜索框打造了 Web 时代的统一入口，对于大部分网站而言，人们不会再去直接输入 URL 来访问，而是通过搜索的方式；Apple 接下来用 App 的方式打造了  App 时代的入口，人们随身携带的手机，解锁之后就会看到一个个 App，每个都各司其职；Google 虽然凭借 Android 勉强在 App 时代赶上 iOS，但是想要重新成为入口，就必须升级人机界面。而 Google 的答案就是 Google Assistant。</p>
+
+<p>这是一个 big deal。</p>
+
+<p>看上去没什么大不了的，不过是升级了一下搜索框，变成了语音搜索。但是这里面有几个特性，极大地影响了其结果。首先是 Web 已有的特性：</p>
+
+<ol>
+<li>不必安装来使用特定服务。发布会使用了 Uber 来演示这一过程，全程没有 App 参与进来。</li>
+<li>可以立即使用无限多的服务。承接上一点，当 App 不必安装的时候，潜在的你可以使用市面上所有的 App。</li>
+<li>界面简单。跟搜索框一样，它就是一个按钮，而不是好几屏幕的 App 图标。</li>
+</ol>
+
+
+<p>其次是 Google Assistant 独有的特性：</p>
+
+<ol>
+<li>Context-aware：Google Assistant 提供对话模式，这就意味着背后的系统是有短期记忆的。它可以通过上下文极大的简化你所需要提供的信息，以及更精确的搜索。</li>
+<li>隐身 App：今年 Google IO 推出了 Instant Apps，让用户可以不必下载一个 App 而使用它。用户可以直接使用新的界面来完成简单如叫车这样的任务；当任务变复杂的时候，系统可以提供精简版的 App 即时下载并使用；当任务更加复杂的时候，系统再提供完整版的 App 让用户使用。需要注意的是，App 可以完全由系统来管理，自动缓存等等，对用户完全不可见。</li>
+<li>当界面本身可以直接完成一个动作的时候，用户不会再在意背后真正的提供商是谁了。当你拿起手机对手机说：“帮我预定一瓶特仑苏牛奶明天晚上送到”，然后明天晚上牛奶送到了你的门口。你并不会真的在意是谁卖给你的牛奶，又是谁送到你的门口。只要体验够好。Google 的智能匹配厂商和用户的广告模式就可以发挥极大的作用了。</li>
+</ol>
+
+
+<p>这些特性包含了：机器学习技术壁垒，第三方开发者杠杆，完整的商业模式。</p>
+
+<p>所以这是一个 big deal。</p>
+
+<blockquote><p>A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.
+-- Antoine de Saint-Exupery</p></blockquote>
+
+<p>一件完美的艺术品没有什么是可以再被去掉的了。所以 Jobs 时代的 iOS 是一件艺术品。Google 的搜索同样也是。</p>
 ]]></content></entry><entry><title type="text">软件工程中我们为什么要写测试</title><link href="http://ranmocy.info//tech/why-we-write-tests-in-software-engineering/" type="text/html" /><link href="http://ranmocy.info//tech/why-we-write-tests-in-software-engineering//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:软件工程中我们为什么要写测试</id><created>2016-07-31T20:45:59-0700</created><updated>2016-07-31T20:45:59-0700</updated><published>2016-07-31T20:45:59-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>想写这篇博客的起因是看到王垠同学的博客中提到了之前在 Google 工作的时候，他完成了自认为无比艰难，代码却写的无比清晰的工作，然而 code review 过程中他的同事却逼迫他写测试。他认为，代码写的“Obviously no bug”，就不应该再强调测试了。</p>
 
 <p>这里王垠犯了一个“Scientist”在“Engineering”中经常会犯的一个错误：忽视合作。我完全不怀疑王垠可以写出漂亮、优美、清晰易懂的代码，但是在工程中，一个人是写不出完整的 Google Maps 服务的，你需要跟无数的人合作，这就意味着：</p>
@@ -2168,7 +2204,7 @@ Emacs 有着 Vi 本质，nano 有着 Vi 本质，甚至 Notepad 也有 Vi 本质
                           Version 1, July 2013
 </code></pre>
 
-<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x72;&#x61;&#110;&#x6d;&#x6f;&#x63;&#x79;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x72;&#97;&#110;&#109;&#111;&#99;&#x79;&#x40;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></p>
+<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#114;&#97;&#110;&#109;&#111;&#99;&#x79;&#x40;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#114;&#x61;&#x6e;&#x6d;&#x6f;&#99;&#121;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a></p>
 
 <p>Permission to use, copy, modify, and/or distribute this license for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
@@ -2292,6 +2328,11 @@ sudo dpkg-reconfigure ca-certificates
 <p>我慢慢地走出大厦，上了一辆老式电车。</p>
 
 <p>2013-06-22 晨</p>
+]]></content></entry><entry><title type="text">宏</title><link href="http://ranmocy.info//tech/macro/" type="text/html" /><link href="http://ranmocy.info//tech/macro//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:宏</id><created>2013-06-11T19:42:01-0700</created><updated>2013-06-22T07:42:33-0700</updated><published>2013-06-11T19:42:01-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>宏有三种。读取阶段，解析阶段，运行阶段。我们可以用图书出版作为例子来解释宏是如何修改程序的。
+我们把文章比作程序，作者的原稿是程序文件，出版社排版是解析程序，读者阅读是程序运行。出于懒惰，我们的文章有一个修改任务，需要将所有的英语缩写展开。
+第一类宏是在出版社接受作者稿件的时候触发的，作者给出版社提供了一个宏，声明了所有loli都替换为Lolita。
+第二类宏在出版社审核文章语法的时候触发，总编辑给出了一个宏，让所有的expo都替换成世博会。并且我们可以指定更复杂的上下文条件，比如只有当前面有不少于两个chapter，并且这个Chapter有不少于5个lolita出现的时候才进行修改。
+第三类宏发生在读者阅读的时候，也就是程序运行的时候。</p>
 ]]></content></entry><entry><title type="text">Howto Install GCC on MacOS</title><link href="http://ranmocy.info//tech/howto-install-gcc-on-macos/" type="text/html" /><link href="http://ranmocy.info//tech/howto-install-gcc-on-macos//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Install GCC on MacOS</id><created>2013-06-11T19:42:01-0700</created><updated>2013-06-22T07:42:33-0700</updated><published>2013-06-11T19:42:01-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>XCode includes the gcc customized for MacOS, but it is incompatible with a lot of wonderful softwares.</p>
 
 <p>Run <code>brew doctor</code> will return:</p>
@@ -2315,11 +2356,6 @@ sudo dpkg-reconfigure ca-certificates
 
 <pre><code>https://github.com/mxcl/homebrew/wiki/Custom-GCC-and-cross-compilers
 </code></pre>
-]]></content></entry><entry><title type="text">宏</title><link href="http://ranmocy.info//tech/macro/" type="text/html" /><link href="http://ranmocy.info//tech/macro//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:宏</id><created>2013-06-11T19:42:01-0700</created><updated>2013-06-22T07:42:33-0700</updated><published>2013-06-11T19:42:01-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>宏有三种。读取阶段，解析阶段，运行阶段。我们可以用图书出版作为例子来解释宏是如何修改程序的。
-我们把文章比作程序，作者的原稿是程序文件，出版社排版是解析程序，读者阅读是程序运行。出于懒惰，我们的文章有一个修改任务，需要将所有的英语缩写展开。
-第一类宏是在出版社接受作者稿件的时候触发的，作者给出版社提供了一个宏，声明了所有loli都替换为Lolita。
-第二类宏在出版社审核文章语法的时候触发，总编辑给出了一个宏，让所有的expo都替换成世博会。并且我们可以指定更复杂的上下文条件，比如只有当前面有不少于两个chapter，并且这个Chapter有不少于5个lolita出现的时候才进行修改。
-第三类宏发生在读者阅读的时候，也就是程序运行的时候。</p>
 ]]></content></entry><entry><title type="text">医生</title><link href="http://ranmocy.info//dream/医生/" type="text/html" /><link href="http://ranmocy.info//dream/医生//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:医生</id><created>2013-06-11T19:42:01-0700</created><updated>2013-06-11T19:42:01-0700</updated><published>2013-06-11T19:42:01-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我们一行人在一个很不起眼的地方找到了我们要找的这个江湖医生。
 他一开始不接受，后来决定我们可以开个讲座之类的。
 我们进入他的房间，大概有20平方米，我们开始排凳子。
@@ -2364,7 +2400,6 @@ sudo dpkg-reconfigure ca-certificates
 我很奇怪的跟上去发现它的前面有我们的牧羊犬，在踩在河中的石头小心的过河。
 这个举动也很反常，我再向前望去，看到医生和另外一个姑娘正在兴奋的摘草药。
 我招呼了他们，他们都回来了。</p>
-]]></content></entry><entry><title type="text">创造性</title><link href="http://ranmocy.info//remark/创造性/" type="text/html" /><link href="http://ranmocy.info//remark/创造性//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:创造性</id><created>2013-05-19T08:30:54-0700</created><updated>2013-05-19T08:30:54-0700</updated><published>2013-05-19T08:30:54-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人是没法凭空创造出事物和概念的，所有的创造性皆是已有概念的组合，而所有原始的概念皆是源于对这个世界的抽象。所以认识自然了解自然的人才能手中拥有更多种类的积木，会更有创造性。</p>
 ]]></content></entry><entry><title type="text">管理的原则</title><link href="http://ranmocy.info//remark/管理的原则/" type="text/html" /><link href="http://ranmocy.info//remark/管理的原则//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:管理的原则</id><created>2013-05-19T08:30:54-0700</created><updated>2013-05-19T08:30:54-0700</updated><published>2013-05-19T08:30:54-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>管理学真理集
 最重要的就是权责统一
 权责不统一是大忌，给责不给权是大忌中的大忌。
@@ -2372,6 +2407,7 @@ sudo dpkg-reconfigure ca-certificates
 管理上最大的难点在于如何理解项目和如何拆分项目。
 良好的决策在于明辨是非，明辨基于理解，而理解是最难的事情。
 统筹设计大局只能有一个人，每个领导者都有自己的roadmap。</p>
+]]></content></entry><entry><title type="text">创造性</title><link href="http://ranmocy.info//remark/创造性/" type="text/html" /><link href="http://ranmocy.info//remark/创造性//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:创造性</id><created>2013-05-19T08:30:54-0700</created><updated>2013-05-19T08:30:54-0700</updated><published>2013-05-19T08:30:54-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人是没法凭空创造出事物和概念的，所有的创造性皆是已有概念的组合，而所有原始的概念皆是源于对这个世界的抽象。所以认识自然了解自然的人才能手中拥有更多种类的积木，会更有创造性。</p>
 ]]></content></entry><entry><title type="text">独裁与民主的选择</title><link href="http://ranmocy.info//remark/独裁与民主的选择/" type="text/html" /><link href="http://ranmocy.info//remark/独裁与民主的选择//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:独裁与民主的选择</id><created>2013-05-19T08:29:33-0700</created><updated>2013-05-19T08:29:33-0700</updated><published>2013-05-19T08:29:33-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>独裁与民主的选择</p>
 
 <p>每个人的想法都是不一样的，
@@ -2397,7 +2433,7 @@ sudo dpkg-reconfigure ca-certificates
 我在思考中醒来。</p>
 
 <p>2013-5-19 早晨</p>
-]]></content></entry><entry><title type="text">Note of Rails Performance Analysis Tools</title><link href="http://ranmocy.info//tech/rails-performance-analysis-tools.en/" type="text/html" /><link href="http://ranmocy.info//tech/rails-performance-analysis-tools.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Rails Performance Analysis Tools</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
+]]></content></entry><entry><title type="text">Rails分析优化辅助工具</title><link href="http://ranmocy.info//tech/rails-performance-analysis-tools/" type="text/html" /><link href="http://ranmocy.info//tech/rails-performance-analysis-tools//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Rails分析优化辅助工具</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/railsbp/rails_best_practices">Rails Best Practise</a></li>
 <li><a href="https://github.com/colszowka/simplecov">SimpleCov</a></li>
@@ -2405,7 +2441,7 @@ sudo dpkg-reconfigure ca-certificates
 <li><a href="https://github.com/codegram/pelusa">Pelusa</a></li>
 </ul>
 
-]]></content></entry><entry><title type="text">Rails分析优化辅助工具</title><link href="http://ranmocy.info//tech/rails-performance-analysis-tools/" type="text/html" /><link href="http://ranmocy.info//tech/rails-performance-analysis-tools//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Rails分析优化辅助工具</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
+]]></content></entry><entry><title type="text">Note of Rails Performance Analysis Tools</title><link href="http://ranmocy.info//tech/rails-performance-analysis-tools.en/" type="text/html" /><link href="http://ranmocy.info//tech/rails-performance-analysis-tools.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Rails Performance Analysis Tools</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/railsbp/rails_best_practices">Rails Best Practise</a></li>
 <li><a href="https://github.com/colszowka/simplecov">SimpleCov</a></li>
