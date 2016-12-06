@@ -2,12 +2,12 @@
 @import url("http://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Lusitana");
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Raleway-TTF';
   font-style: normal;
   font-weight: 400;
   src: local("Raleway"), local("Raleway-Regular"), url(/assets/fonts/raleway.ttf) format("truetype"); }
 @font-face {
-  font-family: 'Lusitana';
+  font-family: 'Lusitana-TTF';
   font-style: normal;
   font-weight: 400;
   src: local("Lusitana"), url(/assets/fonts/lusitana.ttf) format("truetype"); }
@@ -328,7 +328,7 @@ a {
   text-align: center; }
   .lists .title {
     display: inline-block;
-    font: 1.6em 'Raleway','sans-serif';
+    font: 1.6em 'Raleway', 'Raleway-TTF','sans-serif';
     margin: 0 auto;
     padding: 0 1em;
     background-color: #FEFEFE; }
@@ -356,7 +356,7 @@ body {
   color: black;
   font-size: 16px;
   line-height: 2em !important;
-  font-family: Lusitana, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, serif;
+  font-family: Lusitana, Lusitana-TTF, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, serif;
   -webkit-font-smoothing: antialiased; }
   @media (min-width: 1280px) {
     body {
@@ -376,7 +376,7 @@ nav {
     border-bottom: 1px solid #999999; }
 
 span.title {
-  font: 1.5em 'Raleway','sans-serif';
+  font: 1.5em 'Raleway', 'Raleway-TTF','sans-serif';
   color: #4d4d4d; }
 
 span.date {
