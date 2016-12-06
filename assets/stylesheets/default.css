@@ -1,9 +1,16 @@
 @charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lusitana");
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
-  src: local("Raleway"), url(/raleway.woff) format("woff"); }
+  src: local("Raleway"), local("Raleway-Regular"), url(/assets/fonts/raleway.ttf) format("truetype"); }
+@font-face {
+  font-family: 'Lusitana';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lusitana"), url(/assets/fonts/lusitana.ttf) format("truetype"); }
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
   color: #555;
@@ -349,6 +356,7 @@ body {
   color: black;
   font-size: 16px;
   line-height: 2em !important;
+  font-family: Lusitana, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, serif;
   -webkit-font-smoothing: antialiased; }
   @media (min-width: 1280px) {
     body {
