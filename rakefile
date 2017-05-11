@@ -27,7 +27,7 @@ task :publish => [:generate] do
     run("git add .")
     run("git commit -m 'Updated at #{Time.now}.'")
     run("git push origin gh-pages:gh-pages")
-    run("/usr/local/bin/firebase deploy")
+    `firebase deploy` # it may requires terminal lines, safer to not redirect output
   ensure
     run("git checkout master")
   end
