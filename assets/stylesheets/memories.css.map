@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAEA,iBAAkB;EAIhB,QAAQ,EAAE,KAAK;EACf,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,OAAO;EACf,SAAS,EAAE,IAAI;EANf,oCAAqC;IADvC,iBAAkB;MAEd,OAAO,EAAE,IAAI;EAMf,yBAAQ;ICPN,KAAK,EAAE,OAAM;IDSX,WAAW,EAAE,KAAK;ICRpB,iEAAkB;MACd,KAAK,ECLP,OAAO;MDML,eAAe,EAAE,IAAI;IDOvB,+BAAQ;MACN,SAAS,EAAE,IAAI",
-"sources": ["../../../../Users/mocy/Desktop/Brain/assets/stylesheets/memories.css.scss","../../../../Users/mocy/Desktop/Brain/assets/stylesheets/_link_color.scss","../../../../Users/mocy/Desktop/Brain/assets/stylesheets/_colors.scss"],
+"sources": ["../../../../Users/ranmocy/Dropbox/Codespace/Brain/assets/stylesheets/memories.css.scss","../../../../Users/ranmocy/Dropbox/Codespace/Brain/assets/stylesheets/_link_color.scss","../../../../Users/ranmocy/Dropbox/Codespace/Brain/assets/stylesheets/_colors.scss"],
 "names": [],
 "file": "memories.css"
 }
