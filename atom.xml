@@ -15,6 +15,15 @@
     li 人们一直在强调自己拥有的东西往往是他们最缺少的东西。
     li 有激情的事让你亢奋到深夜，让你不觉疲惫的在清晨起来。
     li 自由者，退于野，深山老林五百里，进于世，呼风唤雨三十年。万事可为矣。</p>
+]]></content></entry><entry><title type="text">没有意义</title><link href="https://ranmocy.me//diary/没有意义/" type="text/html" /><link href="https://ranmocy.me//diary/没有意义//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:没有意义</id><created>2018-06-22T05:35:48-0700</created><updated>2018-06-22T05:35:48-0700</updated><published>2018-06-22T05:35:48-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>就像上一篇所说的，每天写一篇日记，都是想什么说什么，没有任何意义的文字，只想倾倒大脑。</p>
+
+<p>今天都做了什么呢，我也没有个头绪。一大堆细细碎碎的事情，不停地找人确定某个问题的进展，不停地被问问题，不停地找答案，不停地跟人问别人问题。现在在不停地写，和不停地确认和修改“的地得”的用法。</p>
+
+<p>现在的人生充满了这种细碎的事情，也不能说完全不重要，但也看不出有多重要，重要的是它们充斥着生活，躲都躲不开。充斥，充斥的意思就是到处都是，都不知道除了它们还剩下什么。</p>
+
+<p>听人说工作之后人会变笨，可能真的如此。也可能根本跟是否工作没有什么关系，随着时间的流逝，随着年龄的增长，人们都在不可逆转的变笨。可能有人快些，有人慢些，有人底子好没那么明显，有人可能只是没自觉看不见感受不到。但是世间万物都在不可逆转的走向衰败，整个世界，整个宇宙都是如此。在第二热力学定律的约束下，不可避免的走向热寂。第二热力学定律就是宇宙自认不可抗拒的命运。这个命运的终点就是热寂，就是衰败，就是完蛋。人类这个种群只会在宇宙完蛋之前完蛋。而我们每个个体也只会在人类完蛋之前完蛋。这就是命运，不可抗拒。</p>
+
+<p>总是听人说起意义这个词，什么什么有什么意义。说到底不过是人类自己的定义。如果一切终将归于尘土，尘土终将归于均质无起伏的能量，那么也没有什么会是有意义的。如果要在人类自身的定义下有点什么意义的话，那绝对会跟人性，跟生物的本性息息相关。生物本性就是吃喝拉撒和七宗罪，更高层次的追求的根源也都是这些本性。本性是最俗的东西，意义也是。</p>
 ]]></content></entry><entry><title type="text">胡言乱语</title><link href="https://ranmocy.me//diary/胡言乱语/" type="text/html" /><link href="https://ranmocy.me//diary/胡言乱语//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:胡言乱语</id><created>2018-06-21T06:10:46-0700</created><updated>2018-06-21T06:10:46-0700</updated><published>2018-06-21T06:10:46-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>从今天起，想要每天写一篇文章，就随便写，乱写，想到什么写什么。
 以这篇文章为始，以胡言乱语为始。</p>
 
@@ -2227,7 +2236,7 @@ Emacs 有着 Vi 本质，nano 有着 Vi 本质，甚至 Notepad 也有 Vi 本质
                           Version 1, July 2013
 </code></pre>
 
-<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#114;&#97;&#x6e;&#x6d;&#x6f;&#99;&#121;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#x63;&#111;&#109;">&#114;&#x61;&#x6e;&#109;&#x6f;&#99;&#x79;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#58;&#x72;&#97;&#x6e;&#x6d;&#111;&#x63;&#x79;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#x6d;">&#x72;&#97;&#110;&#109;&#111;&#99;&#x79;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#111;&#x6d;</a></p>
 
 <p>Permission to use, copy, modify, and/or distribute this license for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
@@ -2456,7 +2465,7 @@ sudo dpkg-reconfigure ca-certificates
 我在思考中醒来。</p>
 
 <p>2013-5-19 早晨</p>
-]]></content></entry><entry><title type="text">Rails分析优化辅助工具</title><link href="https://ranmocy.me//tech/rails-performance-analysis-tools/" type="text/html" /><link href="https://ranmocy.me//tech/rails-performance-analysis-tools//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Rails分析优化辅助工具</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
+]]></content></entry><entry><title type="text">Note of Rails Performance Analysis Tools</title><link href="https://ranmocy.me//tech/rails-performance-analysis-tools.en/" type="text/html" /><link href="https://ranmocy.me//tech/rails-performance-analysis-tools.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Rails Performance Analysis Tools</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/railsbp/rails_best_practices">Rails Best Practise</a></li>
 <li><a href="https://github.com/colszowka/simplecov">SimpleCov</a></li>
@@ -2464,7 +2473,7 @@ sudo dpkg-reconfigure ca-certificates
 <li><a href="https://github.com/codegram/pelusa">Pelusa</a></li>
 </ul>
 
-]]></content></entry><entry><title type="text">Note of Rails Performance Analysis Tools</title><link href="https://ranmocy.me//tech/rails-performance-analysis-tools.en/" type="text/html" /><link href="https://ranmocy.me//tech/rails-performance-analysis-tools.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Rails Performance Analysis Tools</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
+]]></content></entry><entry><title type="text">Rails分析优化辅助工具</title><link href="https://ranmocy.me//tech/rails-performance-analysis-tools/" type="text/html" /><link href="https://ranmocy.me//tech/rails-performance-analysis-tools//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Rails分析优化辅助工具</id><created>2013-05-07T19:46:06-0700</created><updated>2013-05-07T19:46:06-0700</updated><published>2013-05-07T19:46:06-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<ul>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/railsbp/rails_best_practices">Rails Best Practise</a></li>
 <li><a href="https://github.com/colszowka/simplecov">SimpleCov</a></li>
@@ -2834,27 +2843,6 @@ $ make install
 <p>如果没有这种相对稳定的总结出来的构词法、语法、句法，人们学习语言的唯一方法就是学习全部可能的单词、句子，而这几乎是不可能的，而且抹杀了创造力，相当于将整个设计空间遍历而非定向构造。语言所存在的设计空间十分巨大，只有定向构造才是更为有效的方法，尤其是语言本身的作用在于记录和传递信息，它所被使用的主体一直在变化之中，只有不停的构造、变化、总结才能符合主体的需求。</p>
 
 <p>人类在对知识的总结会加速后人的学习速度。所以虽然我们处于一个知识信息爆炸的时代，人们对于特定领域的学习速度是会不断提升的。加上社会整体是由每个个体有机组织起来的，每个人专属一个特定的领域（非常细化的领域），所以社会整体的发展速度只增不减，而且随着人口爆炸指数增加。唯一的问题就是所有的生命都会面临的问题，就是资源的限制。随着公共资源领域的扩展，每个单体人所能享受的资源将会大大增加，而社会整体的人均资源负担却会降低。</p>
-]]></content></entry><entry><title type="text">滑水</title><link href="https://ranmocy.me//dream/滑水/" type="text/html" /><link href="https://ranmocy.me//dream/滑水//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:滑水</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>一个小孩从森林里走出来，脚上穿着一个巨大的像独木舟或是龙舟一样的鞋。他一下子跳出来了。突然我发现他脚下不是坚实的土地，而是波浪起伏的水面，他两只脚稳稳的踩在水面上，像滑冰一样在水面滑行。
-举行滑水比赛。每个人都有了一套这样的鞋子，我们在操场上滑行着，这是我小学的操场。
-我快速的在人群中穿梭，双手在空中挥舞，我可以一只脚高速度大转弯持续很长时间，我感受到了腿部肌肉绷得紧紧的。
-我决定到更远的地方去。我向校门滑去，校门是两扇高大的铁栏杆，用铁链铰在一起，中间有很大的间隙，上面有一个女生想要翻过去。我直接冲向中间的间隙，但是第一次骻骨卡住了，我侧了一下身就挤过去了。
-回头看到那个女生还没有翻过来，我决定要帮她。大门好像一下子变得好矮，又变得柔软，如同上方就是铁链一样波动着。我帮她把铁链往下压并固定住，她又试了几次，终于过来了。</p>
-
-<p>我决定去旅行。好像有一个目标，又十分的模糊，也许是一个比赛的终点，又好像是比谁去的地方有趣，也许只是我单纯的想去。
-我和其他两个人横穿了马路，抄小道踩了草坪。一束明亮的灯光打到我右侧的脸上，我扭头一看，一辆警车向我们开来，有一个人向我们拍照，我站在离警察最近的位置，估计脸会非常清楚的记录下来。我很清楚，我们的记录要不干净了。
-不过我们没有停下来，继续踩草坪。不过当我来到海边的时候，我意识到天已经黑了，而我周围一个人都没有，我不知道其他比赛的人都在哪里。远远的海里有很多人，点点星光，但我不知道他们当中谁是比赛的人。我不知道方向。
-我拿出iPhone，搜索地图。我看到我在一个大陆边缘，面前是大海，或者只是一片很大的湖，中间有一个小岛，我想去那里，我意识到我很熟悉那个岛的名字，应该是现实中的名字，我当时随口就说出来了，好像是个什么镇，但是我现在想不起来了。这个岛的北边一点有一座岛，我应该也非常熟悉。再北一点有一个小回字形的地方，我发现它在地图上是淡蓝色的，这是海水的颜色，这意味着他是沉在海底的城市，回字形逐层下降，像梯田一样的方形海沟，也许不应该叫海沟，叫海坑比较合适。
-我站在海边，但这里不是沙滩，而是距离海面有些距离的堤坝，好像星海广场。
-我也许是直接跳下去的，也许是找到了路，总之，我现在在水上，溜冰一样的滑水，滑向那个小岛。</p>
-
-<p>不知何时，我到达了小岛，我走在一个下降通道中，前方像是地下人行通道里的商业街一样。斜前方有个长椅，上面坐着很多一动不动的人，像石像一样在等待着什么人，而且不是我，我很清楚，虽然一动不动但他们都是活的。
-我遇到了我的母亲，还有我二舅。他们问我我要去哪里，我说我还不知道，我要想一想。我又拿出iPhone来看地图，我放大了我所在的小岛我意识到我是从小岛的西北角登陆的，这个小岛只有一条通道，从西北角向南再折向东直到东南角，贯穿小岛。东北面是一座巨大的山，占有了小岛三分之二的面积，高耸入云。
-我想了一下，说我想要滑水去南京。南京在这座岛的北边，有些远。南京是一座非常大的城市，地图上看不到它的北边界，回字形，一层一层的城墙，最外面一层沉在水中，我不知道城门在哪里。但是我想去。
-母亲和舅舅用一种深沉但不置可否的表情看着我，对我说，南京很远，你去有什么意义。我说我想去。他们说，你要想好。我想有什么要想的，这么近的旅行，我背起包出门了。
-出门后我意识到现在已经是半夜了，四周漆黑一片，只有远处有零散的点光源。我突然担心起来我会划不过去，半途没有体力的话又没有办法睡觉。可我又十分想去，我觉得我必须去。也许我应该在当地找家旅馆先睡一觉，同时我又感觉这个天永远也不会亮起来，太阳永远也不会再升起。
-我在这小纠结中听到了起床的铃声。</p>
-
-<p>2012-11-13早</p>
 ]]></content></entry><entry><title type="text">Water Skiing</title><link href="https://ranmocy.me//dream/water-skiing/" type="text/html" /><link href="https://ranmocy.me//dream/water-skiing//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:Water Skiing</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>A boy was coming out from the forest,
 wearing giant shoes like canoes or dragon boats on his feet.
 He jumped out suddenly.
@@ -2966,7 +2954,27 @@ But I also felt that the sky would never light up, and the sun would never rise 
 I heard the alarm in this little tangle.</p>
 
 <p>2012-11-13 Morning</p>
-]]></content></entry><entry><title type="text">世界的真实</title><link href="https://ranmocy.me//remark/世界的真实/" type="text/html" /><link href="https://ranmocy.me//remark/世界的真实//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:世界的真实</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人们很少认同一句话：人类整体追求的并不是我们所存在的这个世界的真实，而是我们所面对的世界的真实。</p>
+]]></content></entry><entry><title type="text">滑水</title><link href="https://ranmocy.me//dream/滑水/" type="text/html" /><link href="https://ranmocy.me//dream/滑水//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:滑水</id><created>2012-11-12T18:18:49-0800</created><updated>2012-11-12T18:18:49-0800</updated><published>2012-11-12T18:18:49-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>一个小孩从森林里走出来，脚上穿着一个巨大的像独木舟或是龙舟一样的鞋。他一下子跳出来了。突然我发现他脚下不是坚实的土地，而是波浪起伏的水面，他两只脚稳稳的踩在水面上，像滑冰一样在水面滑行。
+举行滑水比赛。每个人都有了一套这样的鞋子，我们在操场上滑行着，这是我小学的操场。
+我快速的在人群中穿梭，双手在空中挥舞，我可以一只脚高速度大转弯持续很长时间，我感受到了腿部肌肉绷得紧紧的。
+我决定到更远的地方去。我向校门滑去，校门是两扇高大的铁栏杆，用铁链铰在一起，中间有很大的间隙，上面有一个女生想要翻过去。我直接冲向中间的间隙，但是第一次骻骨卡住了，我侧了一下身就挤过去了。
+回头看到那个女生还没有翻过来，我决定要帮她。大门好像一下子变得好矮，又变得柔软，如同上方就是铁链一样波动着。我帮她把铁链往下压并固定住，她又试了几次，终于过来了。</p>
+
+<p>我决定去旅行。好像有一个目标，又十分的模糊，也许是一个比赛的终点，又好像是比谁去的地方有趣，也许只是我单纯的想去。
+我和其他两个人横穿了马路，抄小道踩了草坪。一束明亮的灯光打到我右侧的脸上，我扭头一看，一辆警车向我们开来，有一个人向我们拍照，我站在离警察最近的位置，估计脸会非常清楚的记录下来。我很清楚，我们的记录要不干净了。
+不过我们没有停下来，继续踩草坪。不过当我来到海边的时候，我意识到天已经黑了，而我周围一个人都没有，我不知道其他比赛的人都在哪里。远远的海里有很多人，点点星光，但我不知道他们当中谁是比赛的人。我不知道方向。
+我拿出iPhone，搜索地图。我看到我在一个大陆边缘，面前是大海，或者只是一片很大的湖，中间有一个小岛，我想去那里，我意识到我很熟悉那个岛的名字，应该是现实中的名字，我当时随口就说出来了，好像是个什么镇，但是我现在想不起来了。这个岛的北边一点有一座岛，我应该也非常熟悉。再北一点有一个小回字形的地方，我发现它在地图上是淡蓝色的，这是海水的颜色，这意味着他是沉在海底的城市，回字形逐层下降，像梯田一样的方形海沟，也许不应该叫海沟，叫海坑比较合适。
+我站在海边，但这里不是沙滩，而是距离海面有些距离的堤坝，好像星海广场。
+我也许是直接跳下去的，也许是找到了路，总之，我现在在水上，溜冰一样的滑水，滑向那个小岛。</p>
+
+<p>不知何时，我到达了小岛，我走在一个下降通道中，前方像是地下人行通道里的商业街一样。斜前方有个长椅，上面坐着很多一动不动的人，像石像一样在等待着什么人，而且不是我，我很清楚，虽然一动不动但他们都是活的。
+我遇到了我的母亲，还有我二舅。他们问我我要去哪里，我说我还不知道，我要想一想。我又拿出iPhone来看地图，我放大了我所在的小岛我意识到我是从小岛的西北角登陆的，这个小岛只有一条通道，从西北角向南再折向东直到东南角，贯穿小岛。东北面是一座巨大的山，占有了小岛三分之二的面积，高耸入云。
+我想了一下，说我想要滑水去南京。南京在这座岛的北边，有些远。南京是一座非常大的城市，地图上看不到它的北边界，回字形，一层一层的城墙，最外面一层沉在水中，我不知道城门在哪里。但是我想去。
+母亲和舅舅用一种深沉但不置可否的表情看着我，对我说，南京很远，你去有什么意义。我说我想去。他们说，你要想好。我想有什么要想的，这么近的旅行，我背起包出门了。
+出门后我意识到现在已经是半夜了，四周漆黑一片，只有远处有零散的点光源。我突然担心起来我会划不过去，半途没有体力的话又没有办法睡觉。可我又十分想去，我觉得我必须去。也许我应该在当地找家旅馆先睡一觉，同时我又感觉这个天永远也不会亮起来，太阳永远也不会再升起。
+我在这小纠结中听到了起床的铃声。</p>
+
+<p>2012-11-13早</p>
 ]]></content></entry><entry><title type="text">存在</title><link href="https://ranmocy.me//remark/存在/" type="text/html" /><link href="https://ranmocy.me//remark/存在//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:存在</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>What are we?
 我们的存在是什么？
 肉体的存在？精神的存在？</p>
@@ -3013,6 +3021,7 @@ What you did decide what you are. What you are doing decide what you will be.
 用着爱疯的美丽姑娘。
 ——盛万章《长廊》
 </code></pre>
+]]></content></entry><entry><title type="text">世界的真实</title><link href="https://ranmocy.me//remark/世界的真实/" type="text/html" /><link href="https://ranmocy.me//remark/世界的真实//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:世界的真实</id><created>2012-10-08T18:07:35-0700</created><updated>2012-10-08T18:07:35-0700</updated><published>2012-10-08T18:07:35-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人们很少认同一句话：人类整体追求的并不是我们所存在的这个世界的真实，而是我们所面对的世界的真实。</p>
 ]]></content></entry><entry><title type="text">情绪</title><link href="https://ranmocy.me//idea/emotions/" type="text/html" /><link href="https://ranmocy.me//idea/emotions//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:情绪</id><created>2012-08-15T17:36:53-0700</created><updated>2012-08-15T17:36:53-0700</updated><published>2012-08-15T17:36:53-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>为什么人会有负面情绪呢？
 悲伤的，愤怒的，消沉的。这些有什么用？
 为什么进化的过程中会产生出这些？
@@ -3444,6 +3453,104 @@ If you want to read HTML email in mew:</p>
 `(list ,@a)
 =&gt;(list a b)
 </code></pre>
+]]></content></entry><entry><title type="text">Howto Setup Emacs-w3m</title><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m/" type="text/html" /><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Setup Emacs-w3m</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>Install w3m</p>
+
+<pre><code>brew install w3m
+</code></pre>
+
+<p>CHECKPOINT:
+  Now you have the w3m under your exec-path.</p>
+
+<p>Download from http://emacs-w3m.namazu.org/
+Currently newest stable version: http://emacs-w3m.namazu.org/emacs-w3m-1.4.4.tar.gz</p>
+
+<p>If you are using Emacs 24, you have to use development version in CVS.</p>
+
+<pre><code>cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot login
+# No password is set.  Just hit Enter/Return key.
+cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
+</code></pre>
+
+<p>CHECKPOINT:
+  Now you have the source of emacs-w3m, Luke.</p>
+
+<p>Install it.</p>
+
+<pre><code>cd emacs-w3m
+autoconf # if it is development version
+./configure
+make
+</code></pre>
+
+<p>Move it to your load path by</p>
+
+<pre><code>(add-to-list load-path "/your/path/to/emacs-w3m")
+</code></pre>
+
+<p>or</p>
+
+<pre><code>make install
+</code></pre>
+
+<h1>Now-you-can</h1>
+
+<ol>
+<li>(require 'w3m) in your Emacs.</li>
+</ol>
+
+
+<h1>Finish setup-emacs-w3m</h1>
+]]></content></entry><entry><title type="text">回首2012</title><link href="https://ranmocy.me//diary/回首2012/" type="text/html" /><link href="https://ranmocy.me//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
+精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
+物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
+
+<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
+不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
+我觉得现在的我，才敢叫自己的心态为平和。
+这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
+我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
+我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
+虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
+
+<p>就这一点来说，我对自己很满意。</p>
+
+<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
+
+<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
+虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
+后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
+
+<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
+这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
+所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
+就像是孙猴子逃不过五指山。</p>
+
+<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
+
+<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
+
+<p>这个世界变化太快，我有些跟不上。</p>
+
+<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
+太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
+所以即使我接受了它们，也没有足够的时间去了解它们。
+我迷惑，但是没有人会察觉。</p>
+
+<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
+那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
+
+<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
+在这个过程中发展自己的生存主义。
+福叔说，要极简。</p>
+
+<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
+现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
+
+<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
+
+<p>(´º)</p>
+
+<p>2013-01-01 01:47</p>
 ]]></content></entry><entry><title type="text">本源之零</title><link href="https://ranmocy.me//philosophy/本源之零/" type="text/html" /><link href="https://ranmocy.me//philosophy/本源之零//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:本源之零</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>这个哲学体系可以说是独立于社会之外的视角来审视这个世界。
 像是从上帝视角来看待这个世界，有时候可能会显得不近人情。</p>
 
@@ -3639,53 +3746,6 @@ If you want to read HTML email in mew:</p>
 我们通过交流让他人相信些什么，或是相信我们的理念，或是相信我们可以给他们带来什么样的利益，或是相信我们是他们所无法打败的。</p>
 
 <p>所以语言，是精神界的最高<em>表现</em>。</p>
-]]></content></entry><entry><title type="text">Howto Setup Emacs-w3m</title><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m/" type="text/html" /><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Setup Emacs-w3m</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>Install w3m</p>
-
-<pre><code>brew install w3m
-</code></pre>
-
-<p>CHECKPOINT:
-  Now you have the w3m under your exec-path.</p>
-
-<p>Download from http://emacs-w3m.namazu.org/
-Currently newest stable version: http://emacs-w3m.namazu.org/emacs-w3m-1.4.4.tar.gz</p>
-
-<p>If you are using Emacs 24, you have to use development version in CVS.</p>
-
-<pre><code>cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot login
-# No password is set.  Just hit Enter/Return key.
-cvs -d :pserver:anonymous@cvs.namazu.org:/storage/cvsroot co emacs-w3m
-</code></pre>
-
-<p>CHECKPOINT:
-  Now you have the source of emacs-w3m, Luke.</p>
-
-<p>Install it.</p>
-
-<pre><code>cd emacs-w3m
-autoconf # if it is development version
-./configure
-make
-</code></pre>
-
-<p>Move it to your load path by</p>
-
-<pre><code>(add-to-list load-path "/your/path/to/emacs-w3m")
-</code></pre>
-
-<p>or</p>
-
-<pre><code>make install
-</code></pre>
-
-<h1>Now-you-can</h1>
-
-<ol>
-<li>(require 'w3m) in your Emacs.</li>
-</ol>
-
-
-<h1>Finish setup-emacs-w3m</h1>
 ]]></content></entry><entry><title type="text">网管部</title><link href="https://ranmocy.me//idea/nimo/" type="text/html" /><link href="https://ranmocy.me//idea/nimo//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:网管部</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>大学期间在网管部的工作过程中发现了很有趣的现象。</p>
 
 <p>网管部是一个自组织的学生组织。
@@ -3740,57 +3800,6 @@ make
 
 <p>编程中，程序是处理数据的方法，宏是生成方法的方法。
 哲学中，方法是处理问题的方法，方法论是生成方法的方法。</p>
-]]></content></entry><entry><title type="text">回首2012</title><link href="https://ranmocy.me//diary/回首2012/" type="text/html" /><link href="https://ranmocy.me//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
-精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
-物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
-
-<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
-不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
-我觉得现在的我，才敢叫自己的心态为平和。
-这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
-我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
-我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
-虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
-
-<p>就这一点来说，我对自己很满意。</p>
-
-<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
-
-<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
-虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
-后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
-
-<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
-这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
-所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
-就像是孙猴子逃不过五指山。</p>
-
-<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
-
-<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
-
-<p>这个世界变化太快，我有些跟不上。</p>
-
-<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
-太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
-所以即使我接受了它们，也没有足够的时间去了解它们。
-我迷惑，但是没有人会察觉。</p>
-
-<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
-那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
-
-<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
-在这个过程中发展自己的生存主义。
-福叔说，要极简。</p>
-
-<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
-现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
-
-<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
-
-<p>(´º)</p>
-
-<p>2013-01-01 01:47</p>
 ]]></content></entry><entry><title type="text">Note of Elisp Delimiter</title><link href="https://ranmocy.me//tech/elisp-delimiter.en/" type="text/html" /><link href="https://ranmocy.me//tech/elisp-delimiter.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Elisp Delimiter</id><created>2012-06-27T07:38:20-0700</created><updated>2012-06-27T07:38:20-0700</updated><published>2012-06-27T07:38:20-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
 
 <p>This is quote. There is no computing. Just return itself.</p>
@@ -3860,6 +3869,11 @@ Useful for dynamic arguments.</p>
 <p>这边蚊子是真多，从来不能想象几十只蚊子在空中飘来飘去是什么感觉。忘记蚊香的存在了，晚上睡的好差。</p>
 
 <p>早上本来打算去看日出的，4点半爬起来发现竟然下雨了。顶着雨去海边逛逛，到了5点半还是什么也看不见，云彩太厚了，这个真遗憾，明明有这么好的沙滩的。</p>
+]]></content></entry><entry><title type="text">自组织</title><link href="https://ranmocy.me//idea/self-construction/" type="text/html" /><link href="https://ranmocy.me//idea/self-construction//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:自组织</id><created>2012-06-25T05:25:36-0700</created><updated>2012-06-25T05:25:36-0700</updated><published>2012-06-25T05:25:36-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>夸克们想要想要形成原子，原子想要结合成为分子，分子结合成为高分子，这些都是让他们能量更低地趋势。
+星际物质在万有引力地作用下倾向于不断聚集和靠拢，
+这个世界的核心动力在于各种存在的自组织，利用自组织不断形成抽象层次更高的组织形式，不断地变得更为有序，来克服熵增的趋势。</p>
+
+<p>但是为什么物质想要组织起来？</p>
 ]]></content></entry><entry><title type="text">黑洞</title><link href="https://ranmocy.me//idea/black-hole/" type="text/html" /><link href="https://ranmocy.me//idea/black-hole//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:黑洞</id><created>2012-06-25T05:25:36-0700</created><updated>2012-06-25T05:25:36-0700</updated><published>2012-06-25T05:25:36-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>黑洞的视界之内真的有物质的存在么？</p>
 
 <p>热力学告诉我们，任何封闭系统的最终结局都是热寂。
@@ -3868,11 +3882,6 @@ Useful for dynamic arguments.</p>
 这样看来，黑洞的热辐射应该是由趋近于黑洞的物质耗散后发射出来的。</p>
 
 <p>那么，视界之内就不应该有物质的存在了。黑洞的引力可不可以是由聚集在附近的物质所形成的？由于空间被拉长而实际上拥有更多的物质？</p>
-]]></content></entry><entry><title type="text">自组织</title><link href="https://ranmocy.me//idea/self-construction/" type="text/html" /><link href="https://ranmocy.me//idea/self-construction//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:自组织</id><created>2012-06-25T05:25:36-0700</created><updated>2012-06-25T05:25:36-0700</updated><published>2012-06-25T05:25:36-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>夸克们想要想要形成原子，原子想要结合成为分子，分子结合成为高分子，这些都是让他们能量更低地趋势。
-星际物质在万有引力地作用下倾向于不断聚集和靠拢，
-这个世界的核心动力在于各种存在的自组织，利用自组织不断形成抽象层次更高的组织形式，不断地变得更为有序，来克服熵增的趋势。</p>
-
-<p>但是为什么物质想要组织起来？</p>
 ]]></content></entry><entry><title type="text">调整生活规律根本不是难事，只要有安静的环境</title><link href="https://ranmocy.me//diary/调整生活规律根本不是难事，只要有安静的环境/" type="text/html" /><link href="https://ranmocy.me//diary/调整生活规律根本不是难事，只要有安静的环境//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:调整生活规律根本不是难事，只要有安静的环境</id><created>2012-06-24T14:27:16-0700</created><updated>2012-06-25T05:25:36-0700</updated><published>2012-06-24T14:27:16-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>现在是 Mon Jun 25 05:27:16 2012，我在上海金山。</p>
 
 <p>金山应该算是上海市的一部分，但是距离市中心有4个小时左右的车程。
