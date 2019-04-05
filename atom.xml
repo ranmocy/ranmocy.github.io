@@ -15,21 +15,19 @@
     li 人们一直在强调自己拥有的东西往往是他们最缺少的东西。
     li 有激情的事让你亢奋到深夜，让你不觉疲惫的在清晨起来。
     li 自由者，退于野，深山老林五百里，进于世，呼风唤雨三十年。万事可为矣。</p>
-]]></content></entry><entry><title type="text">How to be a successful game streaming service</title><link href="https://ranmocy.me//idea/how-to-be-a successful-game-streaming-service/" type="text/html" /><link href="https://ranmocy.me//idea/how-to-be-a successful-game-streaming-service//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:How to be a successful game streaming service</id><created>2019-04-05T03:30:34-0800</created><updated>2019-04-05T03:30:34-0800</updated><published>2019-04-05T03:30:34-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>Here are my thoughts after trying Vectordash service.</p>
-
-<p>Think about it this way. What would attract a user to use a game streaming service instead of traditional PC or consoles?
+]]></content></entry><entry><title type="text">How to be a successful game streaming service</title><link href="https://ranmocy.me//idea/how-to-be-a successful-game-streaming-service/" type="text/html" /><link href="https://ranmocy.me//idea/how-to-be-a successful-game-streaming-service//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:How to be a successful game streaming service</id><created>2019-04-05T03:30:34-0800</created><updated>2019-04-05T03:30:34-0800</updated><published>2019-04-05T03:30:34-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>What would attract a user to use a game streaming service instead of traditional PC or consoles?
 I can think of three common cases:</p>
 
 <ol>
 <li>Playing a new game without waiting to download.</li>
 <li>The game requires a more powerful machine to run than they currently have.</li>
-<li>The game is not on a platform they already have.</li>
+<li>The game is not on a platform the users already have.</li>
 </ol>
 
 
 <p>To attract users in case 1, the service encourages users to keep trying different games.
 So first, it needs to have a lot of games for users to try;
-Secondly, it needs to either allow users to try without purchase or provide subscription plan. Otherwise, pricing games will be the barrier for users to keep trying and streaming service will lose its value here.</p>
+Second, it needs to either allow users to try without purchase or provide subscription plan. Otherwise, pricing games will be the barrier for users to keep trying and streaming service will lose its value here.</p>
 
 <p>To attract users in case 2, the service needs to provide high-resolution video/audio outputs.
 This is where AAA games would fit in. Games like Skyrim, Witcher, Tomb Raider would require a lot of computing resources to run in max settings.</p>
@@ -45,15 +43,15 @@ With that in hand, it could attract users in case 2 who want to play AAA game wi
 With userbase and its industry influence, it becomes easier to attract more games, big or small, to the platform.
 And with a lot of games on the platform, light users in case 1 would also be gathering.</p>
 
-<p>This business strategy is the most natural choice for big companies like Google or Amazon, who wish to build a platform to grab its own destiny.
-Because big companies will strive to build platforms, there may be the chance for a startup company to address case 3, to provide cross-platform experience as a unique angle that big company can't pursue.</p>
+<p>This business strategy is the most natural choice for big companies like Google and Amazon, who wish to build a platform to grab its own destiny.
+Because big companies will strive to build platforms, there may be a chance for startup companies to address case 3, to provide cross-platform experience as a unique direction that big company can't pursue.</p>
 
 <p>On the other hand, what may not be a good signal to be a successful game streaming service?</p>
 
-<p>Dota2, or League of Legends, is examples that don't fit into this business.
-The game has already been developed to be run in all suitable platforms that it could be played.
+<p>Dota2, and League of Legends, are examples that don't fit into this business.
+These games have already been developed to be run on all suitable platforms where it could be played.
 And they are highly optimized to be able to run well on average computers, nonetheless, beautiful graphics is not as important as controllability for it to be a successful game.
-Lastly, those players who love playing it are likely to set it up on a few computers and keep them in there for a long time.</p>
+Lastly, the players who love playing these games are likely to set them up and keep them in their computers for a long time.</p>
 ]]></content></entry><entry><title type="text">没有意义</title><link href="https://ranmocy.me//diary/没有意义/" type="text/html" /><link href="https://ranmocy.me//diary/没有意义//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:没有意义</id><created>2018-06-22T04:35:48-0800</created><updated>2018-06-22T04:35:48-0800</updated><published>2018-06-22T04:35:48-0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>就像上一篇所说的，每天写一篇日记，都是想什么说什么，没有任何意义的文字，只想倾倒大脑。</p>
 
 <p>今天都做了什么呢，我也没有个头绪。一大堆细细碎碎的事情，不停地找人确定某个问题的进展，不停地被问问题，不停地找答案，不停地跟人问别人问题。现在在不停地写，和不停地确认和修改“的地得”的用法。</p>
@@ -2275,7 +2273,7 @@ Emacs 有着 Vi 本质，nano 有着 Vi 本质，甚至 Notepad 也有 Vi 本质
                           Version 1, July 2013
 </code></pre>
 
-<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#58;&#114;&#x61;&#x6e;&#x6d;&#x6f;&#99;&#121;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#114;&#x61;&#110;&#x6d;&#x6f;&#x63;&#x79;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a></p>
+<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x72;&#x61;&#110;&#x6d;&#111;&#99;&#121;&#64;&#x67;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#x6d;">&#114;&#97;&#x6e;&#109;&#111;&#99;&#121;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 
 <p>Permission to use, copy, modify, and/or distribute this license for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
