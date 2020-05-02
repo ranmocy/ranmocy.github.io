@@ -15,6 +15,12 @@
     li 人们一直在强调自己拥有的东西往往是他们最缺少的东西。
     li 有激情的事让你亢奋到深夜，让你不觉疲惫的在清晨起来。
     li 自由者，退于野，深山老林五百里，进于世，呼风唤雨三十年。万事可为矣。</p>
+]]></content></entry><entry><title type="text">2020-05-01</title><link href="https://ranmocy.me//idea/2020-05-01/" type="text/html" /><link href="https://ranmocy.me//idea/2020-05-01//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:2020-05-01</id><created>2020-05-01T19:30:00-0500</created><updated>2020-05-01T19:30:00-0500</updated><published>2020-05-01T19:30:00-0500</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>寻求自我只能在不需要说服其他人的时候才能发生
+寻求自我就是观察自己，测试自己，了解自己。</p>
+
+<p>两个人粘在一起时间久了，彼此都有对方的烙印，分离不得。可又不意味着两人就要一直压在一起。起舞的两人不是绑在一起的两人。空间，如同时间一样重要。</p>
+
+<p>万物皆可总结，诸事皆可抽象。高层次等于高抽象。</p>
 ]]></content></entry><entry><title type="text">Call</title><link href="https://ranmocy.me//poem/call/" type="text/html" /><link href="https://ranmocy.me//poem/call//index.html" rel="alternate" type="text/html" /><id>urn:uuid:poem:Call</id><created>2019-09-27T12:02:00-0700</created><updated>2019-09-27T12:02:00-0700</updated><published>2019-09-27T12:02:00-0700</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="poem"></category><content mode="escaped" type="html"><![CDATA[<pre><code>Here I stand
 And do
 what I can
@@ -2284,7 +2290,7 @@ Emacs 有着 Vi 本质，nano 有着 Vi 本质，甚至 Notepad 也有 Vi 本质
                           Version 1, July 2013
 </code></pre>
 
-<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x72;&#x61;&#110;&#x6d;&#x6f;&#99;&#121;&#64;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x72;&#97;&#x6e;&#109;&#111;&#x63;&#x79;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#99;&#111;&#109;</a></p>
+<p>Copyright (C) 2013, Ranmocy Sheng <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#114;&#x61;&#110;&#x6d;&#111;&#x63;&#121;&#x40;&#x67;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#114;&#97;&#x6e;&#x6d;&#111;&#99;&#121;&#x40;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#109;</a></p>
 
 <p>Permission to use, copy, modify, and/or distribute this license for any purpose
 with or without fee is hereby granted, provided that the above copyright notice
@@ -2408,11 +2414,6 @@ sudo dpkg-reconfigure ca-certificates
 <p>我慢慢地走出大厦，上了一辆老式电车。</p>
 
 <p>2013-06-22 晨</p>
-]]></content></entry><entry><title type="text">宏</title><link href="https://ranmocy.me//tech/macro/" type="text/html" /><link href="https://ranmocy.me//tech/macro//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:宏</id><created>2013-06-12T10:42:01+0800</created><updated>2013-06-22T22:42:33+0800</updated><published>2013-06-12T10:42:01+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>宏有三种。读取阶段，解析阶段，运行阶段。我们可以用图书出版作为例子来解释宏是如何修改程序的。
-我们把文章比作程序，作者的原稿是程序文件，出版社排版是解析程序，读者阅读是程序运行。出于懒惰，我们的文章有一个修改任务，需要将所有的英语缩写展开。
-第一类宏是在出版社接受作者稿件的时候触发的，作者给出版社提供了一个宏，声明了所有loli都替换为Lolita。
-第二类宏在出版社审核文章语法的时候触发，总编辑给出了一个宏，让所有的expo都替换成世博会。并且我们可以指定更复杂的上下文条件，比如只有当前面有不少于两个chapter，并且这个Chapter有不少于5个lolita出现的时候才进行修改。
-第三类宏发生在读者阅读的时候，也就是程序运行的时候。</p>
 ]]></content></entry><entry><title type="text">Howto Install GCC on MacOS</title><link href="https://ranmocy.me//tech/howto-install-gcc-on-macos/" type="text/html" /><link href="https://ranmocy.me//tech/howto-install-gcc-on-macos//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Install GCC on MacOS</id><created>2013-06-12T10:42:01+0800</created><updated>2013-06-22T22:42:33+0800</updated><published>2013-06-12T10:42:01+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>XCode includes the gcc customized for MacOS, but it is incompatible with a lot of wonderful softwares.</p>
 
 <p>Run <code>brew doctor</code> will return:</p>
@@ -2436,6 +2437,11 @@ sudo dpkg-reconfigure ca-certificates
 
 <pre><code>https://github.com/mxcl/homebrew/wiki/Custom-GCC-and-cross-compilers
 </code></pre>
+]]></content></entry><entry><title type="text">宏</title><link href="https://ranmocy.me//tech/macro/" type="text/html" /><link href="https://ranmocy.me//tech/macro//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:宏</id><created>2013-06-12T10:42:01+0800</created><updated>2013-06-22T22:42:33+0800</updated><published>2013-06-12T10:42:01+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>宏有三种。读取阶段，解析阶段，运行阶段。我们可以用图书出版作为例子来解释宏是如何修改程序的。
+我们把文章比作程序，作者的原稿是程序文件，出版社排版是解析程序，读者阅读是程序运行。出于懒惰，我们的文章有一个修改任务，需要将所有的英语缩写展开。
+第一类宏是在出版社接受作者稿件的时候触发的，作者给出版社提供了一个宏，声明了所有loli都替换为Lolita。
+第二类宏在出版社审核文章语法的时候触发，总编辑给出了一个宏，让所有的expo都替换成世博会。并且我们可以指定更复杂的上下文条件，比如只有当前面有不少于两个chapter，并且这个Chapter有不少于5个lolita出现的时候才进行修改。
+第三类宏发生在读者阅读的时候，也就是程序运行的时候。</p>
 ]]></content></entry><entry><title type="text">医生</title><link href="https://ranmocy.me//dream/医生/" type="text/html" /><link href="https://ranmocy.me//dream/医生//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:医生</id><created>2013-06-12T10:42:01+0800</created><updated>2013-06-12T10:42:01+0800</updated><published>2013-06-12T10:42:01+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我们一行人在一个很不起眼的地方找到了我们要找的这个江湖医生。
 他一开始不接受，后来决定我们可以开个讲座之类的。
 我们进入他的房间，大概有20平方米，我们开始排凳子。
@@ -2529,6 +2535,23 @@ sudo dpkg-reconfigure ca-certificates
 <li><a href="https://github.com/codegram/pelusa">Pelusa</a></li>
 </ul>
 
+]]></content></entry><entry><title type="text">愤怒</title><link href="https://ranmocy.me//dream/愤怒/" type="text/html" /><link href="https://ranmocy.me//dream/愤怒//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:愤怒</id><created>2013-05-05T22:35:17+0800</created><updated>2013-05-05T22:35:17+0800</updated><published>2013-05-05T22:35:17+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我坐在一台电脑前，进行语音通话，对方是一名学生的母亲，还有我的母亲。
+我们在讲述这位男生的事情。
+这名男生本是我的同学，强壮而目中无人，长期欺负我，我愤怒，但是我从未表现出来。
+只到有一天我忍无可忍，我要反击。
+我突然增长了许多力量，我抓住他的脚踝，甩了半圈，从空中砸到地上。
+我听到咔嚓一声，我知道他的腿断了。
+他还是大声哭救，但是周围的人都吓呆了，一动不动，他们想不到平时这么好欺负的我竟然可以如此爆发。
+我并没有停歇下来，我跨在他的身上，朝脸部重重的砸下了拳头。</p>
+
+<p>那位母亲又抽噎起来，我母亲安静的与她对话着。
+这一切让我感到厌恶，我看到了自恃弱者的姿态，她只是在博取同情，而我不会同情博取同情的弱者。
+他母亲说正是由于我的原因，这名男生从此一蹶不振，身心俱残，还有一名女生因此而跳楼，这个学校因为这些丑闻人们纷纷离去，整个校园荒芜一片，</p>
+
+<p>我离开电脑前，走出了屋子，看到校园里果真是荒芜一片，我静静地看着不远处有个姑娘走来。
+她走到我的面前，小心的点了下头，我讨厌这种感觉，我无意伤害不强壮的人，他们没有必要害怕我，我只是在面临欺压的时候强力反抗而已。
+我招呼了她，问她来这干嘛，她说要看一下那个男生的母亲或是送个东西什么的，等一下再来找我聊天。
+我没有说话，摆摆手让她进去了。</p>
 ]]></content></entry><entry><title type="text">如何修改 Git 历史中的作者名字</title><link href="https://ranmocy.me//tech/howto-modify-author-name-in-git-history/" type="text/html" /><link href="https://ranmocy.me//tech/howto-modify-author-name-in-git-history//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:如何修改 Git 历史中的作者名字</id><created>2013-05-05T22:35:17+0800</created><updated>2013-05-05T22:35:17+0800</updated><published>2013-05-05T22:35:17+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<pre><code>git filter-branch --commit-filter '
 if [ "$GIT_COMMITTER_NAME" = "riku" ]; then export GIT_COMMITTER_NAME="Riku"; fi;
 if [ "$GIT_COMMITTER_NAME" = "ranmocy" ]; then export GIT_COMMITTER_NAME="Ranmocy Sheng"; fi;
@@ -2549,23 +2572,6 @@ if [ "$GIT_COMMITTER_NAME" = "jimmy" ]; then export GIT_COMMITTER_NAME="Jimmy Hu
 if [ "$GIT_COMMITTER_NAME" = "ghosTM55" ]; then export GIT_COMMITTER_NAME="Thomas Yao"; fi;
 git commit-tree "$@"'
 </code></pre>
-]]></content></entry><entry><title type="text">愤怒</title><link href="https://ranmocy.me//dream/愤怒/" type="text/html" /><link href="https://ranmocy.me//dream/愤怒//index.html" rel="alternate" type="text/html" /><id>urn:uuid:dream:愤怒</id><created>2013-05-05T22:35:17+0800</created><updated>2013-05-05T22:35:17+0800</updated><published>2013-05-05T22:35:17+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="dream"></category><content mode="escaped" type="html"><![CDATA[<p>我坐在一台电脑前，进行语音通话，对方是一名学生的母亲，还有我的母亲。
-我们在讲述这位男生的事情。
-这名男生本是我的同学，强壮而目中无人，长期欺负我，我愤怒，但是我从未表现出来。
-只到有一天我忍无可忍，我要反击。
-我突然增长了许多力量，我抓住他的脚踝，甩了半圈，从空中砸到地上。
-我听到咔嚓一声，我知道他的腿断了。
-他还是大声哭救，但是周围的人都吓呆了，一动不动，他们想不到平时这么好欺负的我竟然可以如此爆发。
-我并没有停歇下来，我跨在他的身上，朝脸部重重的砸下了拳头。</p>
-
-<p>那位母亲又抽噎起来，我母亲安静的与她对话着。
-这一切让我感到厌恶，我看到了自恃弱者的姿态，她只是在博取同情，而我不会同情博取同情的弱者。
-他母亲说正是由于我的原因，这名男生从此一蹶不振，身心俱残，还有一名女生因此而跳楼，这个学校因为这些丑闻人们纷纷离去，整个校园荒芜一片，</p>
-
-<p>我离开电脑前，走出了屋子，看到校园里果真是荒芜一片，我静静地看着不远处有个姑娘走来。
-她走到我的面前，小心的点了下头，我讨厌这种感觉，我无意伤害不强壮的人，他们没有必要害怕我，我只是在面临欺压的时候强力反抗而已。
-我招呼了她，问她来这干嘛，她说要看一下那个男生的母亲或是送个东西什么的，等一下再来找我聊天。
-我没有说话，摆摆手让她进去了。</p>
 ]]></content></entry><entry><title type="text">变强</title><link href="https://ranmocy.me//diary/变强/" type="text/html" /><link href="https://ranmocy.me//diary/变强//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:变强</id><created>2013-04-13T21:23:42+0800</created><updated>2013-04-13T21:23:42+0800</updated><published>2013-04-13T21:23:42+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>之前有段时间过的很愉快，但是回过头想想自己却并没有变强多少。
 所以这种幸福感不过是来源于自己的需求降低到自己的能力水平得到的满足。
 这种满足是虚假的，无用的。
@@ -3023,11 +3029,6 @@ But I also felt that the sky would never light up, and the sun would never rise 
 I heard the alarm in this little tangle.</p>
 
 <p>2012-11-13 Morning</p>
-]]></content></entry><entry><title type="text">工具的选择</title><link href="https://ranmocy.me//remark/工具的选择/" type="text/html" /><link href="https://ranmocy.me//remark/工具的选择//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:工具的选择</id><created>2012-10-09T09:07:35+0800</created><updated>2012-10-09T09:07:35+0800</updated><published>2012-10-09T09:07:35+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>超过一定优秀程度的工具选择大战是没有意义的，
-因为最重要的不是选择具体一个工具，而是整个工具链的选择和搭配，是整个工具系统。
-具有一定基本的理智的观点冲突，同样也不可能完全分出胜负，
-因为最重要的不是一个观点，而是整个观点系统，是你的价值观。
-所以两个充分尊重对方，充分理智的人争论永远都是以找到价值观的分歧点而告终。</p>
 ]]></content></entry><entry><title type="text">存在</title><link href="https://ranmocy.me//remark/存在/" type="text/html" /><link href="https://ranmocy.me//remark/存在//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:存在</id><created>2012-10-09T09:07:35+0800</created><updated>2012-10-09T09:07:35+0800</updated><published>2012-10-09T09:07:35+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>What are we?
 我们的存在是什么？
 肉体的存在？精神的存在？</p>
@@ -3069,6 +3070,11 @@ What you did decide what you are. What you are doing decide what you will be.
 用着爱疯的美丽姑娘。
 ——盛万章《长廊》
 </code></pre>
+]]></content></entry><entry><title type="text">工具的选择</title><link href="https://ranmocy.me//remark/工具的选择/" type="text/html" /><link href="https://ranmocy.me//remark/工具的选择//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:工具的选择</id><created>2012-10-09T09:07:35+0800</created><updated>2012-10-09T09:07:35+0800</updated><published>2012-10-09T09:07:35+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>超过一定优秀程度的工具选择大战是没有意义的，
+因为最重要的不是选择具体一个工具，而是整个工具链的选择和搭配，是整个工具系统。
+具有一定基本的理智的观点冲突，同样也不可能完全分出胜负，
+因为最重要的不是一个观点，而是整个观点系统，是你的价值观。
+所以两个充分尊重对方，充分理智的人争论永远都是以找到价值观的分歧点而告终。</p>
 ]]></content></entry><entry><title type="text">世界的真实</title><link href="https://ranmocy.me//remark/世界的真实/" type="text/html" /><link href="https://ranmocy.me//remark/世界的真实//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:世界的真实</id><created>2012-10-09T09:07:35+0800</created><updated>2012-10-09T09:07:35+0800</updated><published>2012-10-09T09:07:35+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>人们很少认同一句话：人类整体追求的并不是我们所存在的这个世界的真实，而是我们所面对的世界的真实。</p>
 ]]></content></entry><entry><title type="text">重要的还是紧急的</title><link href="https://ranmocy.me//remark/重要的还是紧急的/" type="text/html" /><link href="https://ranmocy.me//remark/重要的还是紧急的//index.html" rel="alternate" type="text/html" /><id>urn:uuid:remark:重要的还是紧急的</id><created>2012-08-16T08:36:53+0800</created><updated>2012-08-16T08:36:53+0800</updated><published>2012-08-16T08:36:53+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="remark"></category><content mode="escaped" type="html"><![CDATA[<p>根据 GTD 理论，我们可以将事务按照重要度和紧急度正交地分为四种类型。
 不用说，既重要又紧急的事务自然要最优先处理，既不重要又不紧急的事务自然要闲得没事干的时候来处理。
@@ -3477,6 +3483,119 @@ If you want to read HTML email in mew:</p>
 
 
 <h1>Finish setup-mew-in-emacs</h1>
+]]></content></entry><entry><title type="text">哲学家</title><link href="https://ranmocy.me//idea/philosopher/" type="text/html" /><link href="https://ranmocy.me//idea/philosopher//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:哲学家</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我渐渐的能体会到哲学家们的痛苦之处了。他们要担负的起整个他们自己构造的世界。
+精心的呵护她，维护她，守护她，那是他们生存的依赖。
+他们因此而最为强大，也因此而最为脆弱。
+我怀念起当年读尼采的书籍时候的快乐，那是不屑俗世的俗世哲学，充满积极能量的超人哲学。
+最近心总是很累，也该回过头去静下心来好好看看那些书的时候了。</p>
+]]></content></entry><entry><title type="text">回首2012</title><link href="https://ranmocy.me//diary/回首2012/" type="text/html" /><link href="https://ranmocy.me//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
+精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
+物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
+
+<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
+不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
+我觉得现在的我，才敢叫自己的心态为平和。
+这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
+我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
+我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
+虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
+
+<p>就这一点来说，我对自己很满意。</p>
+
+<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
+
+<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
+虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
+后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
+
+<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
+这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
+所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
+就像是孙猴子逃不过五指山。</p>
+
+<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
+
+<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
+
+<p>这个世界变化太快，我有些跟不上。</p>
+
+<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
+太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
+所以即使我接受了它们，也没有足够的时间去了解它们。
+我迷惑，但是没有人会察觉。</p>
+
+<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
+那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
+
+<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
+在这个过程中发展自己的生存主义。
+福叔说，要极简。</p>
+
+<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
+现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
+
+<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
+
+<p>(´º)</p>
+
+<p>2013-01-01 01:47</p>
+]]></content></entry><entry><title type="text">方法</title><link href="https://ranmocy.me//idea/method/" type="text/html" /><link href="https://ranmocy.me//idea/method//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:方法</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>//- Methods
+//- Phylosiphy, method</p>
+
+<p>编程中，程序是处理数据的方法，宏是生成方法的方法。
+哲学中，方法是处理问题的方法，方法论是生成方法的方法。</p>
+]]></content></entry><entry><title type="text">本源之零</title><link href="https://ranmocy.me//philosophy/本源之零/" type="text/html" /><link href="https://ranmocy.me//philosophy/本源之零//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:本源之零</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>这个哲学体系可以说是独立于社会之外的视角来审视这个世界。
+像是从上帝视角来看待这个世界，有时候可能会显得不近人情。</p>
+
+<h2>为什么要探究</h2>
+
+<p>我们的世界充满着对象。
+这些对象有些对我们有利有些对我们有害，我们趋利避害的时候需要找到处理他们的方法。
+一些看起来头头是道的人所说的方法多是从自己的经验或是他人的经验之中总结而来。
+而本源哲学追求的是方法本后的原理，也即意为着是生成方法的方法。</p>
+
+<p>这个思维方式的价值并不仅限于生成方法，而是当你学会向上抽象总结的时候，你可以无限深入下去。
+找到方法的方法，还可以去找方法的方法的方法，无穷无尽也。</p>
+
+<p>不断的抽象，你的世界就会像金字塔一样清晰稳固。
+不断的抽象，你只需更少的要点而去抓住整个世界。</p>
+
+<h2>我们有前提</h2>
+
+<p>所有的事物都有根源，如果不断向其根源探究的话是没有穷尽的。
+所以所有的观点均有前提，不认可前提的话，大可不必继续阅读了。</p>
+
+<h6>闲谈Lisp语言</h6>
+
+<p>抽象的抽象的抽象，就是本源。</p>
+
+<p>我们用计算机来处理实际问题，当问题重复出现的时候，我们就抽象一个通用方法（Function），但是方法本身也重复出现呢？于是，Lisp中出现有个很有趣而且很强大的东西叫做宏（Macro）。</p>
+]]></content></entry><entry><title type="text">Note of Elisp Delimiter</title><link href="https://ranmocy.me//tech/elisp-delimiter.en/" type="text/html" /><link href="https://ranmocy.me//tech/elisp-delimiter.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Elisp Delimiter</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
+
+<p>This is quote. There is no computing. Just return itself.</p>
+
+<pre><code>'(list a b)
+=&gt;(list a b)
+</code></pre>
+
+<h2>Backquote + Comma</h2>
+
+<p>This is a backquote to return itself,
+but you can use <code>,</code> to computing inside.</p>
+
+<pre><code>`(list ,(car (list 'a 'b)) b)
+=&gt;(list a b)
+</code></pre>
+
+<h2>Comma + At</h2>
+
+<p>The expression will be expanded in place.
+Useful for dynamic arguments.</p>
+
+<pre><code>(setq a (list a b))
+`(list ,@a)
+=&gt;(list a b)
+</code></pre>
 ]]></content></entry><entry><title type="text">言语有障</title><link href="https://ranmocy.me//philosophy/言语有障/" type="text/html" /><link href="https://ranmocy.me//philosophy/言语有障//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:言语有障</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<h2>语言与思维</h2>
 
 <p>语言是一种记录内心活动的工具，
@@ -3596,30 +3715,6 @@ If you want to read HTML email in mew:</p>
 我们通过交流让他人相信些什么，或是相信我们的理念，或是相信我们可以给他们带来什么样的利益，或是相信我们是他们所无法打败的。</p>
 
 <p>所以语言，是精神界的最高<em>表现</em>。</p>
-]]></content></entry><entry><title type="text">elisp 修饰符</title><link href="https://ranmocy.me//tech/elisp-delimiter/" type="text/html" /><link href="https://ranmocy.me//tech/elisp-delimiter//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:elisp 修饰符</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
-
-<p>引用，表示不进行运算，返回本身。</p>
-
-<pre><code>'(list a b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Backquote + Comma</h2>
-
-<p>引用，但是可以用<code>,</code>选择性求值。</p>
-
-<pre><code>`(list ,(car (list 'a 'b)) b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Comma + At</h2>
-
-<p>将表达式展开为参数表。</p>
-
-<pre><code>(setq a (list a b))
-`(list ,@a)
-=&gt;(list a b)
-</code></pre>
 ]]></content></entry><entry><title type="text">网管部</title><link href="https://ranmocy.me//idea/nimo/" type="text/html" /><link href="https://ranmocy.me//idea/nimo//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:网管部</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>大学期间在网管部的工作过程中发现了很有趣的现象。</p>
 
 <p>网管部是一个自组织的学生组织。
@@ -3651,11 +3746,30 @@ If you want to read HTML email in mew:</p>
 <p>告诉他们如何去做，而不是单单告诉他们去做什么。
 后者不会起到好的结果，因为他们根本不知道如何能够做到你所描述的结果，这实质上是一个创造的过程，从无到有。
 但是前者是单纯的展示，模仿比创造要容易许多，更容易被人们所接受。</p>
-]]></content></entry><entry><title type="text">哲学家</title><link href="https://ranmocy.me//idea/philosopher/" type="text/html" /><link href="https://ranmocy.me//idea/philosopher//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:哲学家</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我渐渐的能体会到哲学家们的痛苦之处了。他们要担负的起整个他们自己构造的世界。
-精心的呵护她，维护她，守护她，那是他们生存的依赖。
-他们因此而最为强大，也因此而最为脆弱。
-我怀念起当年读尼采的书籍时候的快乐，那是不屑俗世的俗世哲学，充满积极能量的超人哲学。
-最近心总是很累，也该回过头去静下心来好好看看那些书的时候了。</p>
+]]></content></entry><entry><title type="text">elisp 修饰符</title><link href="https://ranmocy.me//tech/elisp-delimiter/" type="text/html" /><link href="https://ranmocy.me//tech/elisp-delimiter//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:elisp 修饰符</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
+
+<p>引用，表示不进行运算，返回本身。</p>
+
+<pre><code>'(list a b)
+=&gt;(list a b)
+</code></pre>
+
+<h2>Backquote + Comma</h2>
+
+<p>引用，但是可以用<code>,</code>选择性求值。</p>
+
+<pre><code>`(list ,(car (list 'a 'b)) b)
+=&gt;(list a b)
+</code></pre>
+
+<h2>Comma + At</h2>
+
+<p>将表达式展开为参数表。</p>
+
+<pre><code>(setq a (list a b))
+`(list ,@a)
+=&gt;(list a b)
+</code></pre>
 ]]></content></entry><entry><title type="text">独立</title><link href="https://ranmocy.me//idea/indepence/" type="text/html" /><link href="https://ranmocy.me//idea/indepence//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:独立</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>一个人的独立性取决于他所依赖的东西。
 人的生命长度是有限的，即意味着在一定的成长速度范围中，我们只能拥有有限的高度。
 如果要想站得更高，就需要借助于他人的肩膀。
@@ -3668,83 +3782,7 @@ If you want to read HTML email in mew:</p>
 个中取舍，全在个人。</p>
 
 <p>就社会整体性而言，人们会像蚁群</p>
-]]></content></entry><entry><title type="text">本源之零</title><link href="https://ranmocy.me//philosophy/本源之零/" type="text/html" /><link href="https://ranmocy.me//philosophy/本源之零//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:本源之零</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>这个哲学体系可以说是独立于社会之外的视角来审视这个世界。
-像是从上帝视角来看待这个世界，有时候可能会显得不近人情。</p>
-
-<h2>为什么要探究</h2>
-
-<p>我们的世界充满着对象。
-这些对象有些对我们有利有些对我们有害，我们趋利避害的时候需要找到处理他们的方法。
-一些看起来头头是道的人所说的方法多是从自己的经验或是他人的经验之中总结而来。
-而本源哲学追求的是方法本后的原理，也即意为着是生成方法的方法。</p>
-
-<p>这个思维方式的价值并不仅限于生成方法，而是当你学会向上抽象总结的时候，你可以无限深入下去。
-找到方法的方法，还可以去找方法的方法的方法，无穷无尽也。</p>
-
-<p>不断的抽象，你的世界就会像金字塔一样清晰稳固。
-不断的抽象，你只需更少的要点而去抓住整个世界。</p>
-
-<h2>我们有前提</h2>
-
-<p>所有的事物都有根源，如果不断向其根源探究的话是没有穷尽的。
-所以所有的观点均有前提，不认可前提的话，大可不必继续阅读了。</p>
-
-<h6>闲谈Lisp语言</h6>
-
-<p>抽象的抽象的抽象，就是本源。</p>
-
-<p>我们用计算机来处理实际问题，当问题重复出现的时候，我们就抽象一个通用方法（Function），但是方法本身也重复出现呢？于是，Lisp中出现有个很有趣而且很强大的东西叫做宏（Macro）。</p>
-]]></content></entry><entry><title type="text">回首2012</title><link href="https://ranmocy.me//diary/回首2012/" type="text/html" /><link href="https://ranmocy.me//diary/回首2012//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:回首2012</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>年初的时候，我给自己定了一个目标，要在今年年内完成精神独立和物质独立两项成就，这个是我在上大学以来就一直抱有的期望。
-精神独立方面，要让自己拥有足够的正能量，学会如何独立的控制自己的情绪和生活节奏。最好能够充足到可以分享给他人一些正能量，为他人带来一些快乐。
-物质独立方面，就是简单的不需要家人提供生活费为标准。</p>
-
-<p>回首2012年，挫折仍然不少，失败的仍然失败的一塌糊涂，更要命的是一些年轻时犯下的错误也一并找到我的头上，开始报复我当年的不在意。
-不过虽然打击一直都在，心态却在这个过程中越来越趋近于平和。
-我觉得现在的我，才敢叫自己的心态为平和。
-这个宇宙的法则就是熵增，所有的事物都是趋于混沌和消散，要意识到人只有付出努力才能够刚刚保持现状，要想进步亦要付出更大的努力。
-我失败，我一直失败，但我从来不觉得自己是屌丝，我觉得只有自己认为自己是屌丝，并总是以此来自嘲逃避的人才是真正的屌丝。
-我一直在努力理解我自己，理解我周围的世界，理解我的需求跟这个世界的需求之间的交集在什么地方，努力以最小代价改变自己来适应这个世界。
-虽然我一直在失败，但我从来没放弃，也没有因此而处于焦虑的情绪之中，我坦然的面对堆在自己面前的问题，我唯一在乎的只是如何解决它，而不是如何抱怨它。</p>
-
-<p>就这一点来说，我对自己很满意。</p>
-
-<p>2012年，3月份的时候离开 GitCafe，之后做过两个小网站，小赚了一笔，人生第一次拥有自己完全支配的财富，购买了自己想要的东西而只需要考虑自己是否真的需要它，而不用煞费苦心的想怎么去给母上解释这个东西对我到底有什么用处。</p>
-
-<p>之后的准备出国，其实自己一直没有放在心上。出国这件事中基本上都是母上的说服在推动着。
-虽然理智上自己可以认同出国的确是我的最优选择，但是内心深处总是有一种抗拒。
-后来我在想这个问题的时候感觉，自己考虑的可能不是出国还是工作的问题，而是能不能自己规划自己的人生的问题。</p>
-
-<p>母上很强势，但又从来不动粗很少动用权威，而是讲道理。
-这个其实很难缠，因为讲不过，母上在说服上基本上可以说是专业人士，而且眼光又好。
-所以当我发现自己讲道理讲不过，自己不服气强行按自己的路子走下来总是没有母上指出的路子好的时候，自己的内心深处有一种深深的绝望。
-就像是孙猴子逃不过五指山。</p>
-
-<p>这个其实就是叛逆心理吧。其实，挺没用的东西。</p>
-
-<p>这不是妥协，而是认清楚自己的需求没有跟外界的规则相冲突，认清楚自己能够找到立足的地方。</p>
-
-<p>这个世界变化太快，我有些跟不上。</p>
-
-<p>不过所谓太快，其实也是因为我所了解的世界不是这个世界的真实，还有其实我是一个人类无法摆脱自己的情感完全客观的看这个世界，这两个问题。
-太快，不过是冲击太大，这个世界我还未曾了解的部分滚涌而来而我没有预料。
-所以即使我接受了它们，也没有足够的时间去了解它们。
-我迷惑，但是没有人会察觉。</p>
-
-<p>前些日子看 @forresty 福叔的博客，记得福叔年初或是去年的一篇博客说接下来计划修炼英语直到超越母语的水平。
-那篇博客就是英语写的，很流畅，很多地方已经有 native 的感觉。福叔在他自己的路上走的很快。</p>
-
-<p>很像总结，其实也就是在回顾，自己像毛姆的小说《刀锋》中的主人公一样，面对这个世界致力于找到自己真正需要的东西。
-在这个过程中发展自己的生存主义。
-福叔说，要极简。</p>
-
-<p>所谓极简主义，就是 Minimalist。凡是不必须的，一律砍掉不要。节省精力到自己真正关注的地方上去。福叔把SNS几乎完全砍去。
-现在的我并不完全赞同这种想法，走极端基本没有好结果，关键在于找到这个度，平衡点。而这个要更难一些。</p>
-
-<p>凌晨2点，胃里充斥着酒精，脑袋极度不清醒。</p>
-
-<p>(´º)</p>
-
-<p>2013-01-01 01:47</p>
+]]></content></entry><entry><title type="text">支撑</title><link href="https://ranmocy.me//idea/support/" type="text/html" /><link href="https://ranmocy.me//idea/support//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:支撑</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我还是会脆弱的。最害怕的依旧是自己相信的人不是自己所相信的那个人；自己相信的世界不是自己所相信的世界。</p>
 ]]></content></entry><entry><title type="text">Howto Setup Emacs-w3m</title><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m/" type="text/html" /><link href="https://ranmocy.me//tech/howto-setup-emacs-w3m//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Howto Setup Emacs-w3m</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<p>Install w3m</p>
 
 <pre><code>brew install w3m
@@ -3792,38 +3830,6 @@ make
 
 
 <h1>Finish setup-emacs-w3m</h1>
-]]></content></entry><entry><title type="text">Note of Elisp Delimiter</title><link href="https://ranmocy.me//tech/elisp-delimiter.en/" type="text/html" /><link href="https://ranmocy.me//tech/elisp-delimiter.en//index.html" rel="alternate" type="text/html" /><id>urn:uuid:tech:Note of Elisp Delimiter</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="tech"></category><content mode="escaped" type="html"><![CDATA[<h2>Quote</h2>
-
-<p>This is quote. There is no computing. Just return itself.</p>
-
-<pre><code>'(list a b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Backquote + Comma</h2>
-
-<p>This is a backquote to return itself,
-but you can use <code>,</code> to computing inside.</p>
-
-<pre><code>`(list ,(car (list 'a 'b)) b)
-=&gt;(list a b)
-</code></pre>
-
-<h2>Comma + At</h2>
-
-<p>The expression will be expanded in place.
-Useful for dynamic arguments.</p>
-
-<pre><code>(setq a (list a b))
-`(list ,@a)
-=&gt;(list a b)
-</code></pre>
-]]></content></entry><entry><title type="text">方法</title><link href="https://ranmocy.me//idea/method/" type="text/html" /><link href="https://ranmocy.me//idea/method//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:方法</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>//- Methods
-//- Phylosiphy, method</p>
-
-<p>编程中，程序是处理数据的方法，宏是生成方法的方法。
-哲学中，方法是处理问题的方法，方法论是生成方法的方法。</p>
-]]></content></entry><entry><title type="text">支撑</title><link href="https://ranmocy.me//idea/support/" type="text/html" /><link href="https://ranmocy.me//idea/support//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:支撑</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>我还是会脆弱的。最害怕的依旧是自己相信的人不是自己所相信的那个人；自己相信的世界不是自己所相信的世界。</p>
 ]]></content></entry><entry><title type="text">效率为王</title><link href="https://ranmocy.me//philosophy/效率为王/" type="text/html" /><link href="https://ranmocy.me//philosophy/效率为王//index.html" rel="alternate" type="text/html" /><id>urn:uuid:philosophy:效率为王</id><created>2012-06-27T22:38:20+0800</created><updated>2012-06-27T22:38:20+0800</updated><published>2012-06-27T22:38:20+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="philosophy"></category><content mode="escaped" type="html"><![CDATA[<p>本文前提条件，若非认同，无须阅读：</p>
 
 <ol>
@@ -3917,6 +3923,11 @@ Useful for dynamic arguments.</p>
 <p>这边蚊子是真多，从来不能想象几十只蚊子在空中飘来飘去是什么感觉。忘记蚊香的存在了，晚上睡的好差。</p>
 
 <p>早上本来打算去看日出的，4点半爬起来发现竟然下雨了。顶着雨去海边逛逛，到了5点半还是什么也看不见，云彩太厚了，这个真遗憾，明明有这么好的沙滩的。</p>
+]]></content></entry><entry><title type="text">自组织</title><link href="https://ranmocy.me//idea/self-construction/" type="text/html" /><link href="https://ranmocy.me//idea/self-construction//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:自组织</id><created>2012-06-25T20:25:36+0800</created><updated>2012-06-25T20:25:36+0800</updated><published>2012-06-25T20:25:36+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>夸克们想要想要形成原子，原子想要结合成为分子，分子结合成为高分子，这些都是让他们能量更低地趋势。
+星际物质在万有引力地作用下倾向于不断聚集和靠拢，
+这个世界的核心动力在于各种存在的自组织，利用自组织不断形成抽象层次更高的组织形式，不断地变得更为有序，来克服熵增的趋势。</p>
+
+<p>但是为什么物质想要组织起来？</p>
 ]]></content></entry><entry><title type="text">黑洞</title><link href="https://ranmocy.me//idea/black-hole/" type="text/html" /><link href="https://ranmocy.me//idea/black-hole//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:黑洞</id><created>2012-06-25T20:25:36+0800</created><updated>2012-06-25T20:25:36+0800</updated><published>2012-06-25T20:25:36+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>黑洞的视界之内真的有物质的存在么？</p>
 
 <p>热力学告诉我们，任何封闭系统的最终结局都是热寂。
@@ -3925,11 +3936,6 @@ Useful for dynamic arguments.</p>
 这样看来，黑洞的热辐射应该是由趋近于黑洞的物质耗散后发射出来的。</p>
 
 <p>那么，视界之内就不应该有物质的存在了。黑洞的引力可不可以是由聚集在附近的物质所形成的？由于空间被拉长而实际上拥有更多的物质？</p>
-]]></content></entry><entry><title type="text">自组织</title><link href="https://ranmocy.me//idea/self-construction/" type="text/html" /><link href="https://ranmocy.me//idea/self-construction//index.html" rel="alternate" type="text/html" /><id>urn:uuid:idea:自组织</id><created>2012-06-25T20:25:36+0800</created><updated>2012-06-25T20:25:36+0800</updated><published>2012-06-25T20:25:36+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="idea"></category><content mode="escaped" type="html"><![CDATA[<p>夸克们想要想要形成原子，原子想要结合成为分子，分子结合成为高分子，这些都是让他们能量更低地趋势。
-星际物质在万有引力地作用下倾向于不断聚集和靠拢，
-这个世界的核心动力在于各种存在的自组织，利用自组织不断形成抽象层次更高的组织形式，不断地变得更为有序，来克服熵增的趋势。</p>
-
-<p>但是为什么物质想要组织起来？</p>
 ]]></content></entry><entry><title type="text">调整生活规律根本不是难事，只要有安静的环境</title><link href="https://ranmocy.me//diary/调整生活规律根本不是难事，只要有安静的环境/" type="text/html" /><link href="https://ranmocy.me//diary/调整生活规律根本不是难事，只要有安静的环境//index.html" rel="alternate" type="text/html" /><id>urn:uuid:diary:调整生活规律根本不是难事，只要有安静的环境</id><created>2012-06-25T05:27:16+0800</created><updated>2012-06-25T20:25:36+0800</updated><published>2012-06-25T05:27:16+0800</published><author><name>Ranmocy</name><email>ranmocy@gmail.com</email></author><category term="diary"></category><content mode="escaped" type="html"><![CDATA[<p>现在是 Mon Jun 25 05:27:16 2012，我在上海金山。</p>
 
 <p>金山应该算是上海市的一部分，但是距离市中心有4个小时左右的车程。
