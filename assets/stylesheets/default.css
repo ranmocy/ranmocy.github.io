@@ -11,79 +11,69 @@
   font-style: normal;
   font-weight: 400;
   src: local("Lusitana"), url(/assets/fonts/lusitana.ttf) format("truetype"); }
+/* Copied from https://github.com/sofish/typo.css */
 /* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
 html {
-  color: #555;
+  color: #333;
   background: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-rendering: optimizelegibility; }
 
+/* 如果你的项目仅支持 IE9+ | Chrome | Firefox 等，推荐在 <html> 中添加 .borderbox 这个 class */
+html.borderbox *, html.borderbox *:before, html.borderbox *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
-body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
   margin: 0;
   padding: 0; }
 
 /* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
   display: block; }
 
 /* HTML5 媒体文件跟 img 保持一致 */
 audio, canvas, video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1; }
+  display: inline-block; }
 
 /* 要注意表单元素并不继承父级 font 的问题 */
 body, button, input, select, textarea {
-  font-family: Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-  line-height: 1.8em; }
+  font: 300 1em/1.8 PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif; }
 
-/* 去除 IE6 input/button 多余的空白 */
-button, input {
-  *width: auto;
-  *overflow: visible;
-  /* 让 input 和 button 一样高 */
-  line-height: 22px; }
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
 
-/* 去掉各Table  cell 的边距并让其边重合 */
+/* 去掉各Table cell 的边距并让其边重合 */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
-/* IE bug fixed: th 不继承 text-align*/
-th {
-  text-align: inherit; }
 
 /* 去除默认边框 */
 fieldset, img {
   border: 0; }
 
-/* 解决 IE6-7 图片缩放锯齿问题 */
-img {
-  -ms-interpolation-mode: bicubic; }
-
-/* ie6 7 8(q) bug 显示为行内表现 */
-iframe {
-  display: block; }
-
 /* 块/段落引用 */
 blockquote {
-  margin: 1em 0;
-  padding: 0.5em 1em;
-  font-size: 80%;
-  color: #888;
-  background: #f9f9f9;
-  border-left: 0.4em solid #ddd; }
+  position: relative;
+  color: #999;
+  font-weight: 400;
+  border-left: 1px solid #888;
+  padding-left: 1em;
+  margin: 1em 3em 1em 2em; }
 
-blockquote blockquote {
-  padding: 0 0 0 1em;
-  margin-left: 2em; }
-
+@media only screen and (max-width: 640px) {
+  blockquote {
+    margin: 1em 0; } }
 /* Firefox 以外，元素没有下划线，需添加 */
 acronym, abbr {
   border-bottom: 1px dotted;
-  font-variant: normal; }
+  font-variant: normal;
+  text-decoration: none; }
 
 /* 添加鼠标问号，进一步确保应用的语义是正确的（要知道，交互他们也有洁癖，如果你不去掉，那得多花点口舌） */
 abbr {
@@ -112,12 +102,11 @@ q:before, q:after {
 sub, sup {
   font-size: 75%;
   line-height: 0;
-  position: relative;
-  vertical-align: text-top\9; }
+  position: relative; }
 
 :root sub, :root sup {
   vertical-align: baseline;
-  /* for ie9 and other mordern browsers */ }
+  /* for ie9 and other modern browsers */ }
 
 sup {
   top: -0.5em; }
@@ -125,13 +114,12 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* 让链接在 hover 状态下显示下划线 */
-a:hover {
-  text-decoration: underline; }
-
 /* 默认不显示下划线，保持页面简洁 */
 ins, a {
   text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
 
 /* 专名号：虽然 u 已经重回 html5 Draft，但在所有浏览器中都是可以使用的，
  * 要做到更好，向后兼容的话，添加 class="typo-u" 来显示专名号
@@ -144,35 +132,42 @@ u, .typo-u {
 
 /* 标记，类似于手写的荧光笔的作用 */
 mark {
-  background: #fffdd1; }
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px; }
 
 /* 代码片断 */
-pre, code {
-  font-family: "Courier New", Courier, monospace;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
+pre, code, pre tt {
+  font-family: Courier, 'Courier New', monospace; }
 
 pre {
+  background: #f8f8f8;
   border: 1px solid #ddd;
-  border-left-width: 0.4em;
-  background: #fbfbfb;
-  padding: 10px; }
+  padding: 1em 1.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch; }
 
-/* 一致化 horizonal rule */
+/* 一致化 horizontal rule */
 hr {
   border: none;
   border-bottom: 1px solid #cfcfcf;
-  margin-bottom: 10px;
-  *color: pink;
-  *filter: chroma(color=pink);
-  height: 10px;
-  *margin: -7px 0 2px; }
+  margin-bottom: 0.8em;
+  height: 10px; }
 
 /* 底部印刷体、版本等标记 */
 small, .typo-small,
 figcaption {
-  font-size: 12px;
+  font-size: 0.9em;
   color: #888; }
+
+strong, b {
+  font-weight: bold;
+  color: #000; }
+
+/* 可拖动文件添加拖动手势 */
+[draggable] {
+  cursor: move; }
 
 .clearfix:before, .clearfix:after {
   content: "";
@@ -184,37 +179,50 @@ figcaption {
 .clearfix {
   zoom: 1; }
 
+/* 强制文本换行 */
+.textwrap, .textwrap td, .textwrap th {
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.textwrap-table {
+  table-layout: fixed; }
+
+/* 提供 serif 版本的字体设置: iOS 下中文自动 fallback 到 sans-serif */
+.serif {
+  font-family: Palatino, Optima, Georgia, serif; }
+
 /* 保证块/段落之间的空白隔行 */
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr, .typo table,
-.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table {
-  margin-bottom: 1em; }
+.typo-p, .typo-pre, .typo-ul, .typo-ol, .typo-dl, .typo-form, .typo-hr, .typo-table, blockquote {
+  margin-bottom: 1.2em; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  font-weight: 800\9;
-  font-family: Helvetica Neue, Microsoft Yahei,Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;
-  color: #333; }
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 100;
+  color: #000;
+  line-height: 1.35; }
 
 /* 标题应该更贴紧内容，并与其他块区分，margin 值要相应做优化 */
 .typo h1, .typo h2, .typo h3, .typo h4, .typo h5, .typo h6,
 .typo-h1, .typo-h2, .typo-h3, .typo-h4, .typo-h5, .typo-h6 {
-  margin-bottom: 0.4em;
-  line-height: 1.5; }
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  line-height: 1.35; }
 
 .typo h1, .typo-h1 {
-  font-size: 1.8em; }
+  font-size: 2em; }
 
 .typo h2, .typo-h2 {
-  font-size: 1.6em; }
+  font-size: 1.8em; }
 
 .typo h3, .typo-h3 {
-  font-size: 1.4em; }
+  font-size: 1.6em; }
 
 .typo h4, .typo-h4 {
-  font-size: 1.2em; }
+  font-size: 1.4em; }
 
 .typo h5, .typo h6, .typo-h5, .typo-h6 {
-  font-size: 1em; }
+  font-size: 1.2em; }
 
 /* 在文章中，应该还原 ul 和 ol 的样式 */
 .typo ul, .typo-ul {
@@ -226,17 +234,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 1.9em; }
 
 .typo li ul, .typo li ol, .typo-ul ul, .typo-ul ol, .typo-ol ul, .typo-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0.8em;
   margin-left: 2em; }
 
 .typo li ul, .typo-ul ul, .typo-ol ul {
   list-style: circle; }
 
 /* 同 ul/ol，在文章中应用 table 基本格式 */
-.typo table th, .typo table td, .typo-table th, .typo-table td .typo table caption {
+.typo table th, .typo table td, .typo-table th, .typo-table td, .typo table caption {
   border: 1px solid #ddd;
-  padding: 5px 10px; }
+  padding: 0.5em 1em;
+  color: #666; }
 
 .typo table th, .typo-table th {
   background: #fbfbfb; }
@@ -244,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 .typo table thead th, .typo-table thead th {
   background: #f1f1f1; }
 
-.typo table .caption {
+.typo table caption {
   border-bottom: none; }
 
 /* 去除 webkit 中 input 和 textarea 的默认样式  */
@@ -252,37 +260,26 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-appearance: none;
   border-radius: 0; }
 
-/* 高亮选中 */
-::-moz-selection {
-  background: #5af;
-  color: #fff; }
-
-::selection {
-  background: #5af;
-  color: #fff; }
-
-/* TODO: 供着重号使用 */
 .typo-em, .typo em, legend, caption {
-  font-weight: 700; }
+  color: #000;
+  font-weight: inherit; }
 
-div.gsc-control-cse {
-  background: none;
-  border: none; }
-  div.gsc-control-cse table td {
-    border: none;
-    padding: 0; }
-  div.gsc-control-cse input.gsc-input {
-    background: none !important; }
-  div.gsc-control-cse input.gsc-search-button {
-    border: 0;
-    height: 100%; }
-  div.gsc-control-cse div.gcsc-branding {
-    display: none; }
-  div.gsc-control-cse a.gs-title {
-    color: #dc322f !important; }
-    div.gsc-control-cse a.gs-title:hover, div.gsc-control-cse a.gs-title.active {
-      color: black;
-      text-decoration: none; }
+/* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
+.typo-em {
+  position: relative; }
+
+.typo-em:after {
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  content: "・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・・"; }
+
+/* Responsive images */
+.typo img {
+  max-width: 100%; }
 
 a {
   color: #dc322f; }
@@ -334,7 +331,7 @@ a {
     background-color: #FEFEFE; }
   .lists .cross-line {
     width: 50%;
-    margin: -1em auto 0 auto;
+    margin: -1em auto 1.2em auto;
     border-top: #7f7f7f solid 1px; }
   .lists .small-line {
     width: 30%; }
@@ -353,9 +350,8 @@ html {
 
 body {
   margin: 0em auto 25% auto;
-  color: black;
+  color: #333;
   font-size: 16px;
-  line-height: 2em !important;
   font-family: Lusitana, Lusitana-TTF, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, serif;
   -webkit-font-smoothing: antialiased; }
   @media (min-width: 1280px) {
@@ -373,11 +369,15 @@ body {
 nav {
   margin: 2em 0em;
   border: none;
-    border-bottom: 1px solid #999999; }
+    border-bottom: 1px solid #aaa; }
+
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: 1em auto; }
 
 span.title {
-  font: 1.5em 'Raleway', 'Raleway-TTF','sans-serif';
-  color: #4d4d4d; }
+  font: 1.5em 'Raleway', 'Raleway-TTF','sans-serif'; }
 
 span.date {
   margin: 0 0.5em; }
@@ -425,15 +425,17 @@ pre {
     padding: 0;
     margin: 0; }
 
-article {
-  width: 80%;
-  max-width: 600px;
-  margin: 1em auto; }
-  article img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 3px 3px #ccc; }
+article img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 3px 3px #ccc; }
+
+div.gsc-control-cse table td {
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 32px; }
 
 /*# sourceMappingURL=default.css.map */
